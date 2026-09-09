@@ -1,5 +1,8 @@
 import React from 'react';
 import { Hero } from '@/components/sections/Hero';
+import { FeatureGrid } from '@/components/sections/FeatureGrid';
+import { MobileFeature } from '@/components/sections/MobileFeature';
+import { CtaSection } from '@/components/sections/CtaSection';
 
 export default function HomePage() {
   return (
@@ -55,6 +58,10 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <FeatureGrid />
+      <MobileFeature />
+      <CtaSection />
     </>
   );
 }
