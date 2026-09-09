@@ -54,7 +54,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           </div>
           <div>
             <p className="font-semibold text-foreground">{blog.author_name}</p>
-            <p className="text-sm text-gray-500">
+            <p suppressHydrationWarning className="text-sm text-gray-500">
               Published on {new Date(blog.created_at).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}
             </p>
           </div>

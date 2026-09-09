@@ -54,7 +54,7 @@ export default async function BlogsPage() {
             blogs.map((post) => (
               <article key={post.id} className="flex flex-col items-start justify-between bg-gray-50 rounded-3xl p-8 border border-gray-100 transition hover:shadow-md">
                 <div className="flex items-center gap-x-4 text-xs">
-                  <time dateTime={post.created_at} className="text-gray-500">
+                  <time suppressHydrationWarning dateTime={post.created_at} className="text-gray-500">
                     {new Date(post.created_at).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}
                   </time>
                   <span className="relative z-10 rounded-full bg-white px-3 py-1.5 font-medium text-gray-600 border border-gray-200">
