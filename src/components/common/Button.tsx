@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: 'primary' | 'ghost' | 'outline';
+  variant?: 'primary' | 'ghost' | 'outline' | 'white';
   href?: string;
 }
 
@@ -12,7 +12,8 @@ export function Button({ variant = 'primary', href, className = '', children, ..
   const variants = {
     primary: 'bg-brand text-white hover:bg-brand-hover shadow-sm',
     ghost: 'text-foreground hover:bg-brand-soft hover:text-brand',
-    outline: 'border border-gray-300 bg-transparent hover:bg-gray-50 text-foreground'
+    outline: 'border border-gray-300 bg-transparent hover:bg-gray-50 text-foreground',
+    white: 'bg-white text-brand hover:bg-gray-50 shadow-sm'
   };
 
   const combinedClassName = `${baseStyles} ${variants[variant]} ${className}`;

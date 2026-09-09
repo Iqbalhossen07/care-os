@@ -38,14 +38,18 @@ export function Hero() {
           </div>
           
           <div className="relative">
-            <div className="relative rounded-2xl bg-gray-50 border border-gray-100 shadow-xl overflow-hidden aspect-[4/3] flex items-center justify-center">
-              {/* Placeholder for dashboard mockup */}
-              <div className="text-center p-8">
-                <div className="mx-auto h-16 w-16 bg-brand-soft rounded-xl flex items-center justify-center mb-4">
-                  <span className="text-brand font-bold text-xl">OS</span>
+            <div className="relative rounded-3xl bg-gray-50 border border-gray-100 shadow-xl overflow-hidden aspect-[4/3] flex items-center justify-center">
+              <img 
+                 src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=1000" 
+                 alt="Care worker using tablet" 
+                 className="absolute inset-0 h-full w-full object-cover opacity-90"
+               />
+               <div className="absolute inset-0 bg-gradient-to-tr from-brand/80 to-transparent mix-blend-multiply"></div>
+              
+              <div className="relative z-10 text-center p-8">
+                <div className="mx-auto h-16 w-16 bg-white/20 backdrop-blur-md rounded-2xl flex items-center justify-center mb-4 shadow-lg border border-white/30">
+                  <span className="text-white font-bold text-2xl font-serif">OS</span>
                 </div>
-                <h3 className="text-xl font-bold text-foreground">Interactive Dashboard Preview</h3>
-                <p className="text-gray-500 mt-2">Pixel-perfect UI mockups will go here.</p>
               </div>
             </div>
           </div>

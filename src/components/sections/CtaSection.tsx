@@ -12,11 +12,11 @@ export function CtaSection() {
           <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-brand-soft">
             Join hundreds of forward-thinking care providers using CareStaff OS to deliver better care, ensure compliance, and connect families.
           </p>
-          <div className="mt-10 flex items-center justify-center gap-x-6">
-            <Button href="/contact" className="bg-white text-brand hover:bg-gray-50 h-12 px-8 text-base">
+          <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-x-6">
+            <Button href="/contact" variant="white" className="h-12 px-8 text-base w-full sm:w-auto">
               Book a free demo
             </Button>
-            <a href="/about" className="text-sm font-semibold leading-6 text-white hover:text-brand-soft transition-colors">
+            <a href="/about" className="text-sm font-semibold leading-6 text-white hover:text-brand-soft transition-colors mt-2 sm:mt-0">
               Learn more about us <span aria-hidden="true">→</span>
             </a>
           </div>

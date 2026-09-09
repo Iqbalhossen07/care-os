@@ -1,13 +1,17 @@
 import React from 'react';
 import { Hero } from '@/components/sections/Hero';
+import { StatsSection } from '@/components/sections/StatsSection';
 import { FeatureGrid } from '@/components/sections/FeatureGrid';
 import { MobileFeature } from '@/components/sections/MobileFeature';
+import { FamilyPortalFeature } from '@/components/sections/FamilyPortalFeature';
+import { Testimonials } from '@/components/sections/Testimonials';
 import { CtaSection } from '@/components/sections/CtaSection';
 
 export default function HomePage() {
   return (
     <>
       <Hero />
+      <StatsSection />
       
       {/* Three Panel Feature Overview */}
       <section className="bg-gray-50 py-24 sm:py-32">
@@ -22,7 +26,7 @@ export default function HomePage() {
             <div className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
               
               {/* Panel A */}
-              <div className="flex flex-col bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+              <div className="flex flex-col bg-white rounded-2xl p-8 shadow-sm border border-gray-100 transition hover:shadow-md">
                 <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-brand-soft">
                   <span className="text-brand font-bold text-lg">A</span>
                 </div>
@@ -33,7 +37,7 @@ export default function HomePage() {
               </div>
 
               {/* Panel B */}
-              <div className="flex flex-col bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+              <div className="flex flex-col bg-white rounded-2xl p-8 shadow-sm border border-gray-100 transition hover:shadow-md">
                 <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-brand-soft">
                   <span className="text-brand font-bold text-lg">B</span>
                 </div>
@@ -44,7 +48,7 @@ export default function HomePage() {
               </div>
 
               {/* Panel C */}
-              <div className="flex flex-col bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+              <div className="flex flex-col bg-white rounded-2xl p-8 shadow-sm border border-gray-100 transition hover:shadow-md">
                 <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-brand-soft">
                   <span className="text-brand font-bold text-lg">C</span>
                 </div>
@@ -61,6 +65,8 @@ export default function HomePage() {
 
       <FeatureGrid />
       <MobileFeature />
+      <FamilyPortalFeature />
+      <Testimonials />
       <CtaSection />
     </>
   );
