@@ -11,28 +11,24 @@ export const metadata = {
 
 export default function FeaturesPage() {
   return (
-    <div className="bg-white">
+    <div className="bg-background min-h-screen">
       {/* Header */}
-      <section className="bg-brand-soft py-20 text-center px-6">
-        <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl font-serif">
-          One Ecosystem. Three Experiences.
-        </h1>
-        <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-600">
-          Discover how CareStaff OS provides dedicated, purpose-built interfaces for every stakeholder in your care business.
-        </p>
+      <section className="bg-background py-20 text-center px-6 border-b border-border-dark relative overflow-hidden">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[400px] h-[400px] bg-brand/10 rounded-full blur-[100px] pointer-events-none"></div>
+        <div className="relative z-10">
+          <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl font-sans">
+            One Ecosystem. <span className="text-brand">Three Experiences.</span>
+          </h1>
+          <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-400 font-serif">
+            Discover how CareStaff OS provides dedicated, purpose-built interfaces for every stakeholder in your care business.
+          </p>
+        </div>
       </section>
 
       {/* Sections */}
       <FeatureGrid />
-      
-      <div className="border-t border-gray-100">
-        <MobileFeature />
-      </div>
-      
-      <div className="border-t border-gray-100">
-        <FamilyPortalFeature />
-      </div>
-
+      <MobileFeature />
+      <FamilyPortalFeature />
       <CtaSection />
     </div>
   );

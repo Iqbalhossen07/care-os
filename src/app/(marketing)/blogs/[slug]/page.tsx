@@ -41,36 +41,42 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   }
 
   return (
-    <div className="bg-white px-6 py-32 lg:px-8">
-      <div className="mx-auto max-w-3xl text-base leading-7 text-gray-700">
-        <div className="mb-8">
-          <Link href="/blogs" className="text-brand font-semibold hover:underline">
+    <div className="bg-background min-h-screen px-6 py-24 lg:px-8 relative overflow-hidden">
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-brand/5 rounded-full blur-[150px] pointer-events-none"></div>
+
+      <div className="mx-auto max-w-3xl relative z-10">
+        <div className="mb-12">
+          <Link href="/blogs" className="text-brand font-medium hover:text-brand-hover hover:underline transition-colors flex items-center gap-2">
             &larr; Back to all blogs
           </Link>
         </div>
         
-        <p className="text-base font-semibold leading-7 text-brand">Insight</p>
-        <h1 className="mt-2 text-3xl font-bold tracking-tight text-foreground sm:text-5xl font-serif">
+        <div className="inline-flex items-center gap-2 rounded-full bg-brand/10 border border-brand/20 px-3 py-1 text-xs font-bold text-brand uppercase tracking-widest mb-6">
+          Insight
+        </div>
+        
+        <h1 className="mt-2 text-3xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl font-sans leading-tight">
           {blog.title}
         </h1>
-        <div className="mt-6 flex items-center gap-x-4 border-b border-gray-100 pb-8">
-          <div className="h-12 w-12 rounded-full bg-brand flex items-center justify-center text-white font-bold text-xl">
+        
+        <div className="mt-10 flex items-center gap-x-5 border-b border-border-dark pb-10">
+          <div className="h-14 w-14 rounded-full bg-border-dark border border-gray-700 flex items-center justify-center text-white font-bold text-xl font-sans">
             {blog.author_name.charAt(0)}
           </div>
           <div>
-            <p className="font-semibold text-foreground">{blog.author_name}</p>
-            <p suppressHydrationWarning className="text-sm text-gray-500">
+            <p className="font-bold text-white text-lg font-sans">{blog.author_name}</p>
+            <p suppressHydrationWarning className="text-sm text-gray-500 font-serif">
               Published on {new Date(blog.created_at).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}
             </p>
           </div>
         </div>
         
-        <div className="mt-10 max-w-2xl">
-          <p className="text-xl leading-8 text-gray-900 mb-8 font-medium">
+        <div className="mt-12">
+          <p className="text-xl leading-relaxed text-gray-300 mb-10 font-medium font-serif border-l-4 border-brand pl-6">
             {blog.excerpt}
           </p>
           <div 
-            className="text-gray-700 whitespace-pre-wrap leading-relaxed space-y-6"
+            className="text-gray-400 font-serif whitespace-pre-wrap leading-[1.8] text-lg space-y-6"
             dangerouslySetInnerHTML={{ __html: blog.content }}
           />
         </div>
