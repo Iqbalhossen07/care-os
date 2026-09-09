@@ -20,17 +20,22 @@ export async function POST(request: Request) {
       VALUES (?, ?, ?, ?)
     `;
     
-    const [result] = await pool.execute(query, [
+    const result = await pool.execute(query, [
       name, 
       email, 
       company_name || null, 
       message
     ]);
 
+    let data = null;
+    if (result && Array.isArray(result)) {
+      data = result[0];
+    }
+
     return NextResponse.json({ 
       success: true, 
       message: 'Your inquiry has been submitted successfully!',
-      data: result 
+      data: data 
     }, { status: 201 });
 
   } catch (error) {

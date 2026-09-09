@@ -8,10 +8,13 @@ export const revalidate = 60;
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   try {
-    const [rows] = await pool.query(`SELECT title, excerpt FROM blogs WHERE slug = ? LIMIT 1`, [slug]);
-    const blogs = rows as any[];
-    if (blogs.length === 0) return { title: 'Not Found' };
-    return { title: `${blogs[0].title} | CareStaff OS`, description: blogs[0].excerpt };
+    const result = await pool.query(`SELECT title, excerpt FROM blogs WHERE slug = ? LIMIT 1`, [slug]);
+    if (result && Array.isArray(result)) {
+      const blogs = result[0] as any[];
+      if (blogs.length === 0) return { title: 'Not Found' };
+      return { title: `${blogs[0].title} | CareStaff OS`, description: blogs[0].excerpt };
+    }
+    return { title: 'Not Found' };
   } catch (error) {
     return { title: 'Blog' };
   }
@@ -22,10 +25,12 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   
   let blog = null;
   try {
-    const [rows] = await pool.query(`SELECT * FROM blogs WHERE slug = ? LIMIT 1`, [slug]);
-    const blogs = rows as any[];
-    if (blogs.length > 0) {
-      blog = blogs[0];
+    const result = await pool.query(`SELECT * FROM blogs WHERE slug = ? LIMIT 1`, [slug]);
+    if (result && Array.isArray(result)) {
+      const blogs = result[0] as any[];
+      if (blogs.length > 0) {
+        blog = blogs[0];
+      }
     }
   } catch (error) {
     console.error('Error fetching single blog:', error);

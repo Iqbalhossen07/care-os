@@ -4,11 +4,16 @@ import pool from '@/lib/db/mysql';
 export async function GET() {
   try {
     // Fetch all blogs ordered by created date
-    const [rows] = await pool.query(`
+    const result = await pool.query(`
       SELECT id, title, slug, excerpt, author_name, cover_image, published_at, created_at 
       FROM blogs 
       ORDER BY created_at DESC
     `);
+    
+    let rows: any[] = [];
+    if (result && Array.isArray(result)) {
+      rows = result[0] as any[];
+    }
     
     return NextResponse.json({ 
       success: true, 

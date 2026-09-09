@@ -15,12 +15,14 @@ export default async function BlogsPage() {
   let dbError = false;
 
   try {
-    const [rows] = await pool.query(`
+    const result = await pool.query(`
       SELECT id, title, slug, excerpt, author_name, created_at 
       FROM blogs 
       ORDER BY created_at DESC
     `);
-    blogs = rows as any[];
+    if (result && Array.isArray(result)) {
+      blogs = result[0] as any[];
+    }
   } catch (error) {
     console.error('Failed to fetch blogs from database:', error);
     dbError = true;
