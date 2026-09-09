@@ -10,10 +10,10 @@ export function Button({ variant = 'primary', href, className = '', children, ..
   const baseStyles = 'inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-semibold transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand h-10 px-6';
   
   const variants = {
-    primary: 'bg-brand text-white hover:bg-brand-hover shadow-sm',
-    ghost: 'text-foreground hover:bg-brand-soft hover:text-brand',
-    outline: 'border border-gray-300 bg-transparent hover:bg-gray-50 text-foreground',
-    white: 'bg-white text-brand hover:bg-gray-50 shadow-sm'
+    primary: 'bg-brand hover:bg-brand-hover text-white shadow-sm border border-transparent',
+    outline: 'border-border-dark bg-transparent text-white hover:bg-border-dark hover:border-brand/50',
+    ghost: 'bg-transparent text-gray-300 hover:text-brand hover:bg-card-dark',
+    white: 'bg-white hover:bg-gray-50 text-background shadow-sm border border-transparent',
   };
 
   const combinedClassName = `${baseStyles} ${variants[variant]} ${className}`;

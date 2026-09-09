@@ -1,11 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #0f172a;
-  --brand: #0ea5e9; /* Light blue / Sky */
-  --brand-hover: #0284c7;
-  --brand-soft: #f0f9ff;
+  --background: #080d0f; /* Deep dark greenish-black */
+  --foreground: #f8fafc;
+  --brand: #00d2aa; /* Vibrant Messzen cyan */
+  --brand-hover: #00b391;
+  --brand-soft: #00d2aa1a; /* 10% opacity brand for soft backgrounds */
+  --card-dark: #0d1417;
+  --border-dark: #1f292e;
 }
 
 @theme inline {
@@ -14,6 +16,8 @@
   --color-brand: var(--brand);
   --color-brand-hover: var(--brand-hover);
   --color-brand-soft: var(--brand-soft);
+  --color-card-dark: var(--card-dark);
+  --color-border-dark: var(--border-dark);
   --font-sans: var(--font-lora), ui-sans-serif, system-ui, sans-serif;
   --font-serif: var(--font-merriweather), ui-serif, Georgia, serif;
 }
