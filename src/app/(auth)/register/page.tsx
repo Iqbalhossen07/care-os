@@ -31,7 +31,7 @@ export default function RegisterPage() {
                   name="first-name"
                   type="text"
                   required
-                  className="block w-full rounded-xl border-0 bg-card-dark py-3 text-white shadow-sm ring-1 ring-inset ring-border-dark focus:ring-2 focus:ring-inset focus:ring-brand sm:text-sm sm:leading-6 transition-all duration-300"
+                  className="block w-full rounded-xl border-0 bg-card-dark px-4 py-3 text-white shadow-sm ring-1 ring-inset ring-border-dark focus:ring-2 focus:ring-inset focus:ring-brand sm:text-sm sm:leading-6 transition-all duration-300"
                 />
               </div>
             </div>
@@ -45,7 +45,7 @@ export default function RegisterPage() {
                   name="last-name"
                   type="text"
                   required
-                  className="block w-full rounded-xl border-0 bg-card-dark py-3 text-white shadow-sm ring-1 ring-inset ring-border-dark focus:ring-2 focus:ring-inset focus:ring-brand sm:text-sm sm:leading-6 transition-all duration-300"
+                  className="block w-full rounded-xl border-0 bg-card-dark px-4 py-3 text-white shadow-sm ring-1 ring-inset ring-border-dark focus:ring-2 focus:ring-inset focus:ring-brand sm:text-sm sm:leading-6 transition-all duration-300"
                 />
               </div>
             </div>
@@ -61,7 +61,7 @@ export default function RegisterPage() {
                 name="email"
                 type="email"
                 required
-                className="block w-full rounded-xl border-0 bg-card-dark py-3 text-white shadow-sm ring-1 ring-inset ring-border-dark focus:ring-2 focus:ring-inset focus:ring-brand sm:text-sm sm:leading-6 transition-all duration-300"
+                className="block w-full rounded-xl border-0 bg-card-dark px-4 py-3 text-white shadow-sm ring-1 ring-inset ring-border-dark focus:ring-2 focus:ring-inset focus:ring-brand sm:text-sm sm:leading-6 transition-all duration-300"
                 placeholder="you@carehome.com"
               />
             </div>
@@ -77,7 +77,7 @@ export default function RegisterPage() {
                 name="company"
                 type="text"
                 required
-                className="block w-full rounded-xl border-0 bg-card-dark py-3 text-white shadow-sm ring-1 ring-inset ring-border-dark focus:ring-2 focus:ring-inset focus:ring-brand sm:text-sm sm:leading-6 transition-all duration-300"
+                className="block w-full rounded-xl border-0 bg-card-dark px-4 py-3 text-white shadow-sm ring-1 ring-inset ring-border-dark focus:ring-2 focus:ring-inset focus:ring-brand sm:text-sm sm:leading-6 transition-all duration-300"
                 placeholder="Sunrise Care Ltd"
               />
             </div>
@@ -93,19 +93,19 @@ export default function RegisterPage() {
                 name="password"
                 type="password"
                 required
-                className="block w-full rounded-xl border-0 bg-card-dark py-3 text-white shadow-sm ring-1 ring-inset ring-border-dark focus:ring-2 focus:ring-inset focus:ring-brand sm:text-sm sm:leading-6 transition-all duration-300"
+                className="block w-full rounded-xl border-0 bg-card-dark px-4 py-3 text-white shadow-sm ring-1 ring-inset ring-border-dark focus:ring-2 focus:ring-inset focus:ring-brand sm:text-sm sm:leading-6 transition-all duration-300"
                 placeholder="••••••••"
               />
             </div>
           </div>
 
           <div className="pt-2">
-            <button
-              type="submit"
+            <Link
+              href="/"
               className="flex w-full justify-center rounded-xl bg-brand px-3 py-3 text-sm font-bold text-background shadow-lg hover:bg-brand-hover hover:shadow-[0_0_20px_rgba(0,210,170,0.4)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand transition-all duration-300"
             >
               Create Account
-            </button>
+            </Link>
           </div>
           
           <p className="text-xs text-gray-500 font-serif text-center mt-4">

@@ -31,7 +31,7 @@ export default function LoginPage() {
                 type="email"
                 autoComplete="email"
                 required
-                className="block w-full rounded-xl border-0 bg-card-dark py-3 text-white shadow-sm ring-1 ring-inset ring-border-dark focus:ring-2 focus:ring-inset focus:ring-brand sm:text-sm sm:leading-6 transition-all duration-300 placeholder:text-gray-500"
+                className="block w-full rounded-xl border-0 bg-card-dark px-4 py-3 text-white shadow-sm ring-1 ring-inset ring-border-dark focus:ring-2 focus:ring-inset focus:ring-brand sm:text-sm sm:leading-6 transition-all duration-300 placeholder:text-gray-500"
                 placeholder="you@carehome.com"
               />
             </div>
@@ -55,19 +55,19 @@ export default function LoginPage() {
                 type="password"
                 autoComplete="current-password"
                 required
-                className="block w-full rounded-xl border-0 bg-card-dark py-3 text-white shadow-sm ring-1 ring-inset ring-border-dark focus:ring-2 focus:ring-inset focus:ring-brand sm:text-sm sm:leading-6 transition-all duration-300"
+                className="block w-full rounded-xl border-0 bg-card-dark px-4 py-3 text-white shadow-sm ring-1 ring-inset ring-border-dark focus:ring-2 focus:ring-inset focus:ring-brand sm:text-sm sm:leading-6 transition-all duration-300"
                 placeholder="••••••••"
               />
             </div>
           </div>
 
           <div className="pt-2">
-            <button
-              type="submit"
+            <Link
+              href="/"
               className="flex w-full justify-center rounded-xl bg-brand px-3 py-3 text-sm font-bold text-background shadow-lg hover:bg-brand-hover hover:shadow-[0_0_20px_rgba(0,210,170,0.4)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand transition-all duration-300"
             >
               Sign in to CareStaff OS
-            </button>
+            </Link>
           </div>
         </form>
 
