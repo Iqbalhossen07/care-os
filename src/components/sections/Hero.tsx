@@ -9,28 +9,28 @@ export function Hero() {
       <div className="absolute top-1/2 right-0 translate-x-1/3 -translate-y-1/4 w-[600px] h-[600px] bg-blue-900/20 rounded-full blur-[120px] pointer-events-none"></div>
 
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="grid lg:grid-cols-12 gap-16 lg:gap-8 items-center">
+        <div className="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           
           {/* Left Side: Copy */}
           <div className="lg:col-span-5 max-w-2xl">
             {/* Pill Badge */}
-            <div className="inline-flex items-center gap-2 rounded-full bg-brand-soft/50 border border-brand/20 px-3 py-1.5 text-sm font-medium text-brand shadow-[0_0_15px_rgba(0,210,170,0.15)] mb-8">
+            <div className="inline-flex items-center gap-2 rounded-full bg-brand-soft/50 border border-brand/20 px-3 py-1.5 text-sm font-medium text-brand shadow-[0_0_15px_rgba(0,210,170,0.15)] mb-6">
               <span className="flex h-1.5 w-1.5 rounded-full bg-brand animate-pulse"></span>
               The ultimate OS for care homes
             </div>
 
             {/* Headline */}
-            <h1 className="font-sans text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-[3.5rem] leading-[1.15]">
-              Put your compliance on autopilot. <span className="block mt-2 text-brand">Deliver outstanding care.</span>
+            <h1 className="font-sans text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-[3.5rem] leading-[1.1]">
+              Put your compliance on autopilot. <span className="block mt-1 text-brand">Deliver outstanding care.</span>
             </h1>
 
             {/* Sub-headline */}
-            <p className="mt-6 text-lg leading-relaxed text-gray-400 font-serif max-w-xl">
+            <p className="mt-4 text-lg leading-relaxed text-gray-400 font-serif max-w-xl">
               The only ecosystem built as three distinct panels. Connect your Admins, Care Workers, and Families in one unified, real-time platform. Say goodbye to scattered spreadsheets.
             </p>
 
             {/* CTA Buttons */}
-            <div className="mt-10 flex flex-wrap items-center gap-6">
+            <div className="mt-8 flex flex-wrap items-center gap-6">
               <Button href="/contact" variant="primary" className="h-12 px-8 text-base rounded-full shadow-[0_0_20px_rgba(0,210,170,0.3)] hover:shadow-[0_0_30px_rgba(0,210,170,0.5)] hover:-translate-y-0.5 transition-all duration-300">
                 Book a demo
               </Button>
@@ -45,7 +45,7 @@ export function Hero() {
             </div>
 
             {/* User Trust */}
-            <div className="mt-12 flex items-center gap-4">
+            <div className="mt-8 flex items-center gap-4">
               <div className="flex -space-x-3">
                 <img className="inline-block h-10 w-10 rounded-full ring-2 ring-background object-cover" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=150" alt="" />
                 <img className="inline-block h-10 w-10 rounded-full ring-2 ring-background object-cover" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=150" alt="" />
@@ -65,7 +65,7 @@ export function Hero() {
           </div>
 
           {/* Right Side: UI Dashboard Mockup */}
-          <div className="lg:col-span-7 relative mx-auto w-full max-w-lg lg:max-w-none">
+          <div className="lg:col-span-7 relative w-full lg:w-[115%] lg:-ml-4 z-10">
             {/* The main dashboard container */}
             <div className="relative rounded-2xl bg-card-dark border border-border-dark p-2 shadow-2xl z-10 transform lg:-rotate-2 transition-transform duration-700 hover:rotate-0">
               <div className="rounded-xl overflow-hidden border border-border-dark/50 bg-[#0a0f12]">
