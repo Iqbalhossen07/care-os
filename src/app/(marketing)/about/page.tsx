@@ -14,26 +14,26 @@ export default function AboutPage() {
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-brand/10 rounded-full blur-[120px] pointer-events-none"></div>
 
         <div className="mx-auto max-w-7xl px-6 lg:px-8 relative">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
             
-            <div className="max-w-xl">
-              <div className="inline-flex items-center gap-2 rounded-full bg-card-dark border border-border-dark px-3 py-1 text-xs font-bold text-brand uppercase tracking-widest mb-8 shadow-md">
+            <div className="lg:col-span-5 max-w-xl">
+              <div className="inline-flex items-center gap-2 rounded-full bg-card-dark border border-border-dark px-3 py-1 text-xs font-bold text-brand uppercase tracking-widest mb-6 shadow-md">
                 About CareStaff
               </div>
-              <h1 className="font-sans text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl leading-[1.1]">
+              <h1 className="font-sans text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-[3.5rem] leading-[1.1]">
                 Social care deserves a clearer system.
               </h1>
-              <p className="mt-6 text-lg leading-relaxed text-gray-400 font-serif">
+              <p className="mt-4 text-lg leading-relaxed text-gray-400 font-serif">
                 CareStaff OS was created to replace scattered spreadsheets, confusing compliance logs, and repetitive follow-ups with one calm, transparent workspace.
               </p>
-              <div className="mt-10">
+              <div className="mt-8">
                 <Button href="/contact" variant="primary" className="h-12 px-8 rounded-full shadow-[0_0_20px_rgba(0,210,170,0.3)] hover:shadow-[0_0_30px_rgba(0,210,170,0.5)] transition-all">
                   Start for Free &rarr;
                 </Button>
               </div>
             </div>
 
-            <div className="relative">
+            <div className="lg:col-span-7 relative w-full lg:w-[115%] z-10">
               <div className="rounded-3xl bg-card-dark p-2 ring-1 ring-border-dark shadow-2xl overflow-hidden relative group">
                 <img 
                   src="/about-dashboard.jpg" 
