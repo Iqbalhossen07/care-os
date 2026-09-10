@@ -67,13 +67,14 @@ export function Hero() {
           {/* Right Side: UI Dashboard Mockup */}
           <div className="lg:col-span-7 relative w-full lg:w-[115%] lg:-ml-4 z-10">
             {/* The main dashboard container */}
-            <div className="relative rounded-2xl bg-card-dark border border-border-dark p-2 shadow-2xl z-10 transform lg:-rotate-2 transition-transform duration-700 hover:rotate-0">
+            <div className="relative rounded-2xl bg-card-dark border border-border-dark p-2 shadow-2xl z-10">
               <div className="rounded-xl overflow-hidden border border-border-dark/50 bg-[#0a0f12]">
                 <video 
                   src="/hero.mp4" 
                   autoPlay
                   loop
                   muted
+                  controls
                   playsInline
                   className="w-full h-auto object-cover opacity-90 hover:opacity-100 transition-opacity duration-500"
                 />
