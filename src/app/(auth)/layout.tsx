@@ -13,6 +13,9 @@ export default function AuthLayout({ children }: { children: React.ReactNode }) 
 
         <div className="mx-auto w-full max-w-sm lg:w-96 relative z-10">
           <div>
+            <Link href="/" className="inline-flex items-center gap-2 text-sm font-medium text-gray-500 hover:text-brand transition-colors mb-8">
+              &larr; Back to home
+            </Link>
             <div className="mb-10">
               <Logo />
             </div>
