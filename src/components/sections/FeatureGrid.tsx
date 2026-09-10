@@ -1,35 +1,43 @@
 import React from 'react';
+import { 
+  HiOutlineUserGroup, 
+  HiOutlineHeart, 
+  HiOutlineCalendarDays, 
+  HiOutlineShieldCheck, 
+  HiOutlineBuildingStorefront, 
+  HiOutlineChartBar 
+} from 'react-icons/hi2';
 
 const features = [
   {
     name: 'Unified CRM & Operations',
     description: 'Keep all your care plans, resident profiles, and staff records in one single source of truth.',
-    icon: '👤',
+    icon: HiOutlineUserGroup,
   },
   {
     name: 'Smart eMAR & Medication',
     description: 'Reduce errors with digital medication administration records that sync in real-time across the home.',
-    icon: '💊',
+    icon: HiOutlineHeart,
   },
   {
     name: 'Rostering & Timesheets',
     description: 'Drag-and-drop shift builders, automatic wage calculations, and seamless payroll integrations.',
-    icon: '📅',
+    icon: HiOutlineCalendarDays,
   },
   {
     name: 'CQC Compliance Engine',
     description: 'Built-in audit trails and compliance tracking so you are always ready for an inspection.',
-    icon: '🛡️',
+    icon: HiOutlineShieldCheck,
   },
   {
     name: 'Kitchen & Inventory',
     description: 'Manage menus, track dietary requirements, and control stock levels efficiently.',
-    icon: '🍳',
+    icon: HiOutlineBuildingStorefront,
   },
   {
     name: 'Business Analytics',
     description: 'Beautiful dashboards providing insights into occupancy, revenue, and care quality metrics.',
-    icon: '📈',
+    icon: HiOutlineChartBar,
   },
 ];
 
@@ -39,9 +47,9 @@ export function FeatureGrid() {
       {/* Background Glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-brand/5 rounded-full blur-[120px] pointer-events-none"></div>
 
-      <div className="mx-auto max-w-7xl px-6 lg:px-8 relative">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
         <div className="mx-auto max-w-2xl lg:text-center">
-          <div className="inline-flex items-center gap-2 rounded-full bg-border-dark px-3 py-1 text-sm font-medium text-brand mb-6">
+          <div className="inline-flex items-center gap-2 rounded-full bg-border-dark px-3 py-1 text-sm font-medium text-brand mb-6 shadow-inner border border-gray-800">
             Admin & Business Panel
           </div>
           <h2 className="font-sans text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
@@ -55,16 +63,17 @@ export function FeatureGrid() {
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
           <div className="grid max-w-xl grid-cols-1 gap-6 lg:max-w-none lg:grid-cols-2">
             {features.map((feature) => (
-              <div key={feature.name} className="relative p-8 rounded-2xl bg-card-dark border border-border-dark hover:border-brand/30 transition-colors group">
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-background border border-border-dark group-hover:border-brand/50 transition-colors text-2xl shadow-inner shadow-brand/10">
-                    {feature.icon}
+              <div key={feature.name} className="relative p-8 rounded-3xl bg-card-dark border border-border-dark hover:border-brand/40 transition-all duration-300 group hover:shadow-[0_0_40px_rgba(0,210,170,0.05)] hover:-translate-y-1">
+                <div className="flex items-center gap-5 mb-4">
+                  {/* Premium Icon Container */}
+                  <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-gray-900 to-[#05080a] border border-border-dark text-brand shadow-[inset_0_1px_1px_rgba(255,255,255,0.05),0_0_20px_rgba(0,210,170,0.05)] group-hover:border-brand/50 group-hover:shadow-[inset_0_1px_1px_rgba(255,255,255,0.1),0_0_25px_rgba(0,210,170,0.25)] group-hover:text-white transition-all duration-300">
+                    <feature.icon className="w-7 h-7" aria-hidden="true" />
                   </div>
-                  <h3 className="text-xl font-bold font-sans text-white">
+                  <h3 className="text-xl font-bold font-sans text-white tracking-tight">
                     {feature.name}
                   </h3>
                 </div>
-                <p className="text-base leading-7 text-gray-400 font-serif">
+                <p className="text-base leading-relaxed text-gray-400 font-serif mt-2 pl-[76px]">
                   {feature.description}
                 </p>
               </div>
