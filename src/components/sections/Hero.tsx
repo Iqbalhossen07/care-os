@@ -71,70 +71,36 @@ export function Hero() {
             {/* The main dashboard container */}
             <div className="relative rounded-2xl bg-card-dark border border-border-dark p-2 shadow-2xl z-10 transform lg:-rotate-2 transition-transform duration-700 hover:rotate-0">
               <div className="rounded-xl overflow-hidden border border-border-dark/50 bg-[#0a0f12]">
-                {/* Dashboard Header Fake */}
-                <div className="flex items-center gap-2 px-4 py-3 border-b border-border-dark bg-black/20">
-                  <div className="flex gap-1.5">
-                    <div className="w-2.5 h-2.5 rounded-full bg-gray-700"></div>
-                    <div className="w-2.5 h-2.5 rounded-full bg-gray-700"></div>
-                    <div className="w-2.5 h-2.5 rounded-full bg-gray-700"></div>
-                  </div>
-                  <div className="ml-4 flex-1 h-4 rounded-md bg-gray-800/50"></div>
-                </div>
-                {/* Dashboard Body Mock */}
-                <div className="p-4 grid grid-cols-4 gap-4 h-[350px]">
-                  {/* Sidebar */}
-                  <div className="col-span-1 space-y-3">
-                    <div className="h-6 w-full rounded bg-gray-800/50"></div>
-                    <div className="h-3 w-3/4 rounded bg-gray-800/30"></div>
-                    <div className="h-3 w-5/6 rounded bg-gray-800/30"></div>
-                    <div className="h-3 w-4/5 rounded bg-brand/20 border border-brand/30"></div>
-                    <div className="h-3 w-2/3 rounded bg-gray-800/30"></div>
-                  </div>
-                  {/* Main Content Area */}
-                  <div className="col-span-3 space-y-4 border-l border-border-dark pl-4">
-                    <div className="h-8 w-1/3 rounded bg-gray-800/50"></div>
-                    <div className="grid grid-cols-2 gap-3">
-                      <div className="h-24 rounded-lg bg-border-dark border border-gray-700/50 p-3">
-                        <div className="h-4 w-8 rounded bg-brand"></div>
-                        <div className="h-3 w-16 rounded bg-gray-600 mt-4"></div>
-                      </div>
-                      <div className="h-24 rounded-lg bg-border-dark border border-gray-700/50 p-3">
-                        <div className="h-4 w-8 rounded bg-blue-500"></div>
-                        <div className="h-3 w-16 rounded bg-gray-600 mt-4"></div>
-                      </div>
-                    </div>
-                    <div className="h-32 w-full rounded-lg bg-gray-800/30 border border-border-dark p-4">
-                      <div className="h-2 w-full rounded bg-gray-700 mb-2"></div>
-                      <div className="h-2 w-5/6 rounded bg-gray-700 mb-2"></div>
-                      <div className="h-2 w-4/6 rounded bg-gray-700"></div>
-                    </div>
-                  </div>
-                </div>
+                <img 
+                  src="/hero-dashboard.jpg" 
+                  alt="CareStaff OS Dashboard" 
+                  className="w-full h-auto object-cover opacity-90 hover:opacity-100 transition-opacity duration-500"
+                />
               </div>
             </div>
 
             {/* Floating Element 1 */}
-            <div className="absolute -left-12 top-1/4 rounded-xl bg-card-dark border border-border-dark p-4 shadow-2xl z-20 w-48 backdrop-blur-md animate-[bounce_5s_infinite]">
+            <div className="absolute -left-12 top-1/4 rounded-xl bg-card-dark/90 border border-border-dark p-4 shadow-2xl z-20 w-48 backdrop-blur-xl animate-[bounce_5s_infinite]">
               <div className="flex items-center gap-3">
-                <div className="h-10 w-10 rounded-full bg-brand/20 flex items-center justify-center">
+                <div className="h-10 w-10 rounded-full bg-brand/20 flex items-center justify-center border border-brand/30">
                   <svg className="w-5 h-5 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
                 <div>
                   <div className="text-xs text-gray-400 font-serif">Shift Log</div>
-                  <div className="text-sm font-bold text-white">Verified</div>
+                  <div className="text-sm font-bold text-white font-sans">Verified</div>
                 </div>
               </div>
             </div>
 
             {/* Floating Element 2 */}
-            <div className="absolute -right-8 bottom-1/4 rounded-xl bg-card-dark border border-border-dark p-4 shadow-2xl z-20 w-56 backdrop-blur-md animate-[bounce_6s_infinite_reverse]">
+            <div className="absolute -right-8 bottom-1/4 rounded-xl bg-card-dark/90 border border-border-dark p-4 shadow-2xl z-20 w-60 backdrop-blur-xl animate-[bounce_6s_infinite_reverse]">
               <div className="flex items-center gap-3">
-                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=150" className="w-10 h-10 rounded-full object-cover" />
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=150" className="w-10 h-10 rounded-full object-cover border border-border-dark" />
                 <div>
-                  <div className="text-xs text-gray-400 font-serif">Family Portal</div>
-                  <div className="text-sm font-bold text-white">"Mom looks great!"</div>
+                  <div className="text-xs text-brand font-serif">Family Portal</div>
+                  <div className="text-sm font-bold text-white font-sans">"Mom looks great!"</div>
                 </div>
               </div>
             </div>
