@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Button } from '@/components/common/Button';
+import { Logo } from '@/components/common/Logo';
 
 export function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -28,12 +29,7 @@ export function Navbar() {
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-8">
         <div className="flex items-center gap-12">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
-            <div className="h-8 w-8 rounded bg-brand flex items-center justify-center shadow-[0_0_15px_rgba(0,210,170,0.4)]">
-              <span className="text-background font-bold text-lg font-sans">C</span>
-            </div>
-            <span className="text-xl font-bold font-sans text-foreground tracking-tight">CareStaff<span className="text-brand">OS</span></span>
-          </Link>
+          <Logo />
 
           {/* Desktop Links */}
           <div className="hidden md:flex items-center gap-8">

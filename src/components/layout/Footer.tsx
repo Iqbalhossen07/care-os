@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import { Logo } from '@/components/common/Logo';
 
 export function Footer() {
   return (
@@ -8,12 +9,9 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="md:col-span-1">
-            <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="h-8 w-8 rounded bg-brand flex items-center justify-center shadow-[0_0_15px_rgba(0,210,170,0.4)]">
-                <span className="text-background font-bold text-lg font-sans">C</span>
-              </div>
-              <span className="text-xl font-bold font-sans text-white tracking-tight">CareStaff<span className="text-brand">OS</span></span>
-            </Link>
+            <div className="mb-6">
+              <Logo />
+            </div>
             <p className="text-sm leading-6 text-gray-500 font-serif">
               The complete 3-panel ecosystem for modern care homes. Admin, Care Worker, and Family modules unified.
             </p>
