@@ -55,12 +55,13 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           Insight
         </div>
         
+        
         <h1 className="mt-2 text-3xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl font-sans leading-tight">
           {blog.title}
         </h1>
         
         <div className="mt-10 flex items-center gap-x-5 border-b border-border-dark pb-10">
-          <div className="h-14 w-14 rounded-full bg-border-dark border border-gray-700 flex items-center justify-center text-white font-bold text-xl font-sans">
+          <div className="h-14 w-14 rounded-full bg-border-dark border border-gray-700 flex items-center justify-center text-white font-bold text-xl font-sans shadow-inner">
             {blog.author_name.charAt(0)}
           </div>
           <div>
@@ -69,6 +70,16 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               Published on {new Date(blog.created_at).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}
             </p>
           </div>
+        </div>
+
+        {/* Dynamic Cover Image based on slug length just to be deterministic */}
+        <div className="w-full h-[400px] mt-12 rounded-[2rem] overflow-hidden border border-border-dark shadow-2xl relative">
+           <img 
+              src={`https://images.unsplash.com/photo-${blog.slug.length % 2 === 0 ? '1576091160399-112ba8d25d1d' : '1551076805-e18690c5e451'}?auto=format&fit=crop&q=80&w=1200`} 
+              alt={blog.title} 
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-60"></div>
         </div>
         
         <div className="mt-12">

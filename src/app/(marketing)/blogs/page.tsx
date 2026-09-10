@@ -54,41 +54,65 @@ export default async function BlogsPage() {
               No blog posts found. Please add some via your database.
             </div>
           ) : (
-            blogs.map((post) => (
-              <article key={post.id} className="flex flex-col items-start justify-between bg-card-dark rounded-[2rem] p-8 border border-border-dark transition-all duration-300 hover:border-brand/40 hover:shadow-[0_0_30px_rgba(0,210,170,0.1)] group relative overflow-hidden">
-                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div className="flex items-center gap-x-4 text-xs mb-6 w-full justify-between">
-                  <span className="relative z-10 rounded-full bg-brand/10 px-3 py-1.5 font-medium text-brand border border-brand/20">
-                    Insight
-                  </span>
-                  <time suppressHydrationWarning dateTime={post.created_at} className="text-gray-500 font-serif">
-                    {new Date(post.created_at).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}
-                  </time>
-                </div>
-                <div className="group relative flex-1">
-                  <h3 className="mt-2 text-2xl font-bold leading-tight text-white font-sans group-hover:text-brand transition-colors">
-                    <Link href={`/blogs/${post.slug}`}>
-                      <span className="absolute inset-0" />
-                      {post.title}
-                    </Link>
-                  </h3>
-                  <p className="mt-5 line-clamp-3 text-sm leading-relaxed text-gray-400 font-serif">
-                    {post.excerpt}
-                  </p>
-                </div>
-                <div className="relative mt-10 flex items-center gap-x-4 border-t border-border-dark/50 pt-6 w-full">
-                  <div className="h-10 w-10 rounded-full bg-border-dark border border-gray-700 flex items-center justify-center text-white font-bold font-sans">
-                    {post.author_name.charAt(0)}
+            blogs.map((post, index) => {
+              // Array of premium Unsplash images to cycle through
+              const coverImages = [
+                'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=800',
+                'https://images.unsplash.com/photo-1551076805-e18690c5e451?auto=format&fit=crop&q=80&w=800',
+                'https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=800',
+                'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=800',
+                'https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=800'
+              ];
+              const imageUrl = coverImages[index % coverImages.length];
+
+              return (
+                <article key={post.id} className="flex flex-col items-start justify-between bg-card-dark rounded-[2rem] border border-border-dark transition-all duration-300 hover:border-brand/40 hover:shadow-[0_0_30px_rgba(0,210,170,0.1)] group relative overflow-hidden">
+                  <div className="w-full h-48 overflow-hidden relative border-b border-border-dark">
+                    <img 
+                      src={imageUrl} 
+                      alt={post.title} 
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-card-dark to-transparent opacity-80"></div>
                   </div>
-                  <div className="text-sm leading-6">
-                    <p className="font-bold text-white font-sans">
-                      {post.author_name}
-                    </p>
-                    <p className="text-gray-500 font-serif text-xs">CareStaff Team</p>
+                  
+                  <div className="p-8 w-full flex-1 flex flex-col">
+                    <div className="flex items-center gap-x-4 text-xs mb-6 w-full justify-between">
+                      <span className="relative z-10 rounded-full bg-brand/10 px-3 py-1.5 font-medium text-brand border border-brand/20">
+                        Insight
+                      </span>
+                      <time suppressHydrationWarning dateTime={post.created_at} className="text-gray-500 font-serif">
+                        {new Date(post.created_at).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}
+                      </time>
+                    </div>
+                    
+                    <div className="group relative flex-1">
+                      <h3 className="mt-2 text-2xl font-bold leading-tight text-white font-sans group-hover:text-brand transition-colors">
+                        <Link href={`/blogs/${post.slug}`}>
+                          <span className="absolute inset-0" />
+                          {post.title}
+                        </Link>
+                      </h3>
+                      <p className="mt-5 line-clamp-3 text-sm leading-relaxed text-gray-400 font-serif">
+                        {post.excerpt}
+                      </p>
+                    </div>
+                    
+                    <div className="relative mt-8 flex items-center gap-x-4 border-t border-border-dark/50 pt-6 w-full">
+                      <div className="h-10 w-10 rounded-full bg-border-dark border border-gray-700 flex items-center justify-center text-white font-bold font-sans shadow-inner">
+                        {post.author_name.charAt(0)}
+                      </div>
+                      <div className="text-sm leading-6">
+                        <p className="font-bold text-white font-sans">
+                          {post.author_name}
+                        </p>
+                        <p className="text-gray-500 font-serif text-xs">CareStaff Team</p>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </article>
-            ))
+                </article>
+              );
+            })
           )}
         </div>
       </div>
