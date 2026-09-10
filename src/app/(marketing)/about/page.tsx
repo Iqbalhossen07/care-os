@@ -149,27 +149,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Stats Bar */}
-      <section className="border-t border-b border-border-dark bg-card-dark py-12">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {[
-              { stat: '1,000+', label: 'Care Homes Supported', icon: '🏢' },
-              { stat: '10K+', label: 'Staff Members', icon: '👥' },
-              { stat: '99.9%', label: 'System Uptime', icon: '⚡' },
-              { stat: '24/7', label: 'Helpful Support', icon: '🎧' },
-            ].map((s, i) => (
-              <div key={i} className="flex items-center justify-center gap-4 px-4">
-                <div className="text-brand text-2xl">{s.icon}</div>
-                <div>
-                  <div className="text-xl font-bold text-white font-sans">{s.stat}</div>
-                  <div className="text-xs text-gray-500 font-serif">{s.label}</div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+
 
       {/* Founder Section */}
       <section className="py-24 sm:py-32">

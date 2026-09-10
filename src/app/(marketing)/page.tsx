@@ -1,17 +1,14 @@
 import React from 'react';
 import { Hero } from '@/components/sections/Hero';
-import { StatsSection } from '@/components/sections/StatsSection';
 import { FeatureGrid } from '@/components/sections/FeatureGrid';
 import { MobileFeature } from '@/components/sections/MobileFeature';
 import { FamilyPortalFeature } from '@/components/sections/FamilyPortalFeature';
-import { Testimonials } from '@/components/sections/Testimonials';
 import { CtaSection } from '@/components/sections/CtaSection';
 
 export default function HomePage() {
   return (
     <>
       <Hero />
-      <StatsSection />
       
       {/* Three Panel Feature Overview */}
       <section className="bg-background py-24 sm:py-32 border-b border-border-dark relative overflow-hidden">
@@ -71,7 +68,6 @@ export default function HomePage() {
       <FeatureGrid />
       <MobileFeature />
       <FamilyPortalFeature />
-      <Testimonials />
       <CtaSection />
     </>
   );
