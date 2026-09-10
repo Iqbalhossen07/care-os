@@ -53,9 +53,9 @@ export default function PricingPage() {
                </div>
 
                <div className="bg-background rounded-2xl p-6 border border-border-dark mt-8 text-center">
-                 <p className="text-gray-400 text-sm font-serif mb-1">Estimated Monthly Cost</p>
-                 <p className="text-4xl font-extrabold text-white font-sans">£299<span className="text-lg text-gray-500 font-normal">/mo</span></p>
-                 <p className="text-xs text-brand mt-2 font-medium">Cancel anytime. No hidden fees.</p>
+                 <p className="text-gray-400 text-sm font-serif mb-1">Estimated Operational Savings</p>
+                 <p className="text-4xl font-extrabold text-white font-sans">30<span className="text-lg text-gray-500 font-normal"> hrs/week</span></p>
+                 <p className="text-xs text-brand mt-2 font-medium">Reinvested back into patient care.</p>
                </div>
             </div>
           </div>
@@ -100,12 +100,8 @@ export default function PricingPage() {
           {/* Starter */}
           <div className="bg-card-dark border border-border-dark rounded-3xl p-8 flex flex-col hover:border-brand/30 transition-colors">
             <h3 className="text-xl font-bold text-white font-sans mb-2">Starter</h3>
-            <p className="text-sm text-gray-400 font-serif mb-6 h-10">Essential tools for independent care workers.</p>
-            <div className="mb-8">
-              <span className="text-4xl font-extrabold text-white">£49</span>
-              <span className="text-gray-500 text-sm">/mo</span>
-            </div>
-            <Link href="/register" className="w-full py-3 rounded-xl bg-background border border-border-dark text-white font-bold text-sm hover:bg-border-dark transition-colors mb-8 text-center">Get Started</Link>
+            <p className="text-sm text-gray-400 font-serif mb-8 h-10">Essential tools for independent care workers.</p>
+            <Link href="/contact" className="w-full py-3 rounded-xl bg-background border border-border-dark text-white font-bold text-sm hover:bg-border-dark transition-colors mb-8 text-center">Book a demo</Link>
             <ul className="space-y-4 flex-1">
               {['Up to 5 Care Workers', 'Basic Rostering', 'Digital Care Plans', 'Email Support'].map((feat, i) => (
                 <li key={i} className="flex gap-3 text-sm text-gray-300 font-serif">
@@ -122,12 +118,8 @@ export default function PricingPage() {
               Most Popular
             </div>
             <h3 className="text-xl font-bold text-brand font-sans mb-2">Core</h3>
-            <p className="text-sm text-gray-400 font-serif mb-6 h-10">Everything you need to run a growing care home.</p>
-            <div className="mb-8">
-              <span className="text-4xl font-extrabold text-white">£149</span>
-              <span className="text-gray-500 text-sm">/mo</span>
-            </div>
-            <Link href="/register" className="w-full py-3 rounded-xl bg-brand text-background font-bold text-sm hover:bg-brand-hover shadow-lg hover:shadow-[0_0_20px_rgba(0,210,170,0.4)] transition-all mb-8 text-center">Start Free Trial</Link>
+            <p className="text-sm text-gray-400 font-serif mb-8 h-10">Everything you need to run a growing care home.</p>
+            <Link href="/contact" className="w-full py-3 rounded-xl bg-brand text-background font-bold text-sm hover:bg-brand-hover shadow-lg hover:shadow-[0_0_20px_rgba(0,210,170,0.4)] transition-all mb-8 text-center">Book a demo</Link>
             <ul className="space-y-4 flex-1">
               {['Up to 30 Care Workers', 'Advanced Rostering', 'Medication Management (eMAR)', 'Family Portal Access', 'Priority Chat Support'].map((feat, i) => (
                 <li key={i} className="flex gap-3 text-sm text-gray-300 font-serif">
@@ -141,12 +133,8 @@ export default function PricingPage() {
           {/* Advanced */}
           <div className="bg-card-dark border border-border-dark rounded-3xl p-8 flex flex-col hover:border-brand/30 transition-colors">
             <h3 className="text-xl font-bold text-white font-sans mb-2">Advanced</h3>
-            <p className="text-sm text-gray-400 font-serif mb-6 h-10">Deep operational analytics for established agencies.</p>
-            <div className="mb-8">
-              <span className="text-4xl font-extrabold text-white">£399</span>
-              <span className="text-gray-500 text-sm">/mo</span>
-            </div>
-            <Link href="/register" className="w-full py-3 rounded-xl bg-background border border-border-dark text-white font-bold text-sm hover:bg-border-dark transition-colors mb-8 text-center">Get Started</Link>
+            <p className="text-sm text-gray-400 font-serif mb-8 h-10">Deep operational analytics for established agencies.</p>
+            <Link href="/contact" className="w-full py-3 rounded-xl bg-background border border-border-dark text-white font-bold text-sm hover:bg-border-dark transition-colors mb-8 text-center">Book a demo</Link>
             <ul className="space-y-4 flex-1">
               {['Up to 100 Care Workers', 'Finance & Billing integration', 'Custom Reporting', 'Open API Access', 'Dedicated Success Manager'].map((feat, i) => (
                 <li key={i} className="flex gap-3 text-sm text-gray-300 font-serif">
@@ -160,11 +148,8 @@ export default function PricingPage() {
           {/* Enterprise */}
           <div className="bg-card-dark border border-border-dark rounded-3xl p-8 flex flex-col hover:border-brand/30 transition-colors">
             <h3 className="text-xl font-bold text-white font-sans mb-2">Enterprise</h3>
-            <p className="text-sm text-gray-400 font-serif mb-6 h-10">Bespoke solutions for multi-branch organizations.</p>
-            <div className="mb-8">
-              <span className="text-4xl font-extrabold text-white">Custom</span>
-            </div>
-            <Link href="/contact" className="w-full py-3 rounded-xl bg-background border border-border-dark text-white font-bold text-sm hover:bg-border-dark transition-colors mb-8 text-center">Contact Sales</Link>
+            <p className="text-sm text-gray-400 font-serif mb-8 h-10">Bespoke solutions for multi-branch organizations.</p>
+            <Link href="/contact" className="w-full py-3 rounded-xl bg-background border border-border-dark text-white font-bold text-sm hover:bg-border-dark transition-colors mb-8 text-center">Book a demo</Link>
             <ul className="space-y-4 flex-1">
               {['Unlimited Care Workers', 'Multi-branch Management', 'White-label Mobile App', 'SAML SSO', 'Custom Development'].map((feat, i) => (
                 <li key={i} className="flex gap-3 text-sm text-gray-300 font-serif">
@@ -273,8 +258,8 @@ export default function PricingPage() {
           <p className="text-lg text-gray-400 font-serif mb-10 max-w-2xl mx-auto">
             Join hundreds of care homes in the UK modernizing their clinical and operational workflows with CareStaff OS.
           </p>
-          <Link href="/register" className="inline-flex justify-center rounded-xl bg-brand px-8 py-4 text-base font-bold text-background shadow-lg hover:bg-brand-hover hover:shadow-[0_0_30px_rgba(0,210,170,0.4)] transition-all duration-300">
-            Start your free trial today
+          <Link href="/contact" className="inline-flex justify-center rounded-xl bg-brand px-8 py-4 text-base font-bold text-background shadow-lg hover:bg-brand-hover hover:shadow-[0_0_30px_rgba(0,210,170,0.4)] transition-all duration-300">
+            Book a demo today
           </Link>
         </div>
       </section>
