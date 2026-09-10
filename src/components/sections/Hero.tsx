@@ -9,10 +9,10 @@ export function Hero() {
       <div className="absolute top-1/2 right-0 translate-x-1/3 -translate-y-1/4 w-[600px] h-[600px] bg-blue-900/20 rounded-full blur-[120px] pointer-events-none"></div>
 
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-16 lg:gap-8 items-center">
+        <div className="grid lg:grid-cols-12 gap-16 lg:gap-8 items-center">
           
           {/* Left Side: Copy */}
-          <div className="max-w-2xl">
+          <div className="lg:col-span-5 max-w-2xl">
             {/* Pill Badge */}
             <div className="inline-flex items-center gap-2 rounded-full bg-brand-soft/50 border border-brand/20 px-3 py-1.5 text-sm font-medium text-brand shadow-[0_0_15px_rgba(0,210,170,0.15)] mb-8">
               <span className="flex h-1.5 w-1.5 rounded-full bg-brand animate-pulse"></span>
@@ -20,10 +20,8 @@ export function Hero() {
             </div>
 
             {/* Headline */}
-            <h1 className="font-sans text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-[4rem] leading-[1.1]">
-              Put your compliance<br />
-              on autopilot.<br />
-              <span className="text-brand">Deliver outstanding care.</span>
+            <h1 className="font-sans text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-[3.5rem] leading-[1.15]">
+              Put your compliance on autopilot. <span className="block mt-2 text-brand">Deliver outstanding care.</span>
             </h1>
 
             {/* Sub-headline */}
@@ -67,7 +65,7 @@ export function Hero() {
           </div>
 
           {/* Right Side: UI Dashboard Mockup */}
-          <div className="relative mx-auto w-full max-w-lg lg:max-w-none">
+          <div className="lg:col-span-7 relative mx-auto w-full max-w-lg lg:max-w-none">
             {/* The main dashboard container */}
             <div className="relative rounded-2xl bg-card-dark border border-border-dark p-2 shadow-2xl z-10 transform lg:-rotate-2 transition-transform duration-700 hover:rotate-0">
               <div className="rounded-xl overflow-hidden border border-border-dark/50 bg-[#0a0f12]">
