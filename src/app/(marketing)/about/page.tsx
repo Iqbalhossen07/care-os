@@ -10,7 +10,7 @@ export default function AboutPage() {
   return (
     <div className="bg-background min-h-screen">
       {/* Hero Section */}
-      <section className="relative overflow-hidden pt-24 pb-32">
+      <section className="relative overflow-hidden pt-16 pb-32">
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-brand/10 rounded-full blur-[120px] pointer-events-none"></div>
 
         <div className="mx-auto max-w-7xl px-6 lg:px-8 relative">

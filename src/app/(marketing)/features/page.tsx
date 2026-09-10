@@ -13,7 +13,7 @@ export default function FeaturesPage() {
   return (
     <div className="bg-background min-h-screen">
       {/* Header */}
-      <section className="bg-background py-20 text-center px-6 border-b border-border-dark relative overflow-hidden">
+      <section className="bg-background py-12 text-center px-6 border-b border-border-dark relative overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[400px] h-[400px] bg-brand/10 rounded-full blur-[100px] pointer-events-none"></div>
         <div className="relative z-10">
           <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl font-sans">

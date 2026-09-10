@@ -40,7 +40,7 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="bg-background min-h-screen py-24 sm:py-32 relative overflow-hidden">
+    <div className="bg-background min-h-screen py-16 sm:py-32 relative overflow-hidden">
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-brand/5 rounded-full blur-[120px] pointer-events-none"></div>
       
       <div className="mx-auto max-w-2xl px-6 lg:px-8 relative z-10">

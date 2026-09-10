@@ -28,7 +28,7 @@ export default async function BlogsPage() {
   }
 
   return (
-    <div className="bg-background min-h-screen py-24 sm:py-32 relative overflow-hidden">
+    <div className="bg-background min-h-screen py-16 sm:py-32 relative overflow-hidden">
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-brand/10 rounded-full blur-[120px] pointer-events-none"></div>
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">

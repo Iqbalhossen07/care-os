@@ -41,7 +41,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   }
 
   return (
-    <div className="bg-background min-h-screen px-6 py-24 lg:px-8 relative overflow-hidden">
+    <div className="bg-background min-h-screen px-6 py-16 lg:px-8 relative overflow-hidden">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-brand/5 rounded-full blur-[150px] pointer-events-none"></div>
 
       <div className="mx-auto max-w-3xl relative z-10">
