@@ -55,13 +55,18 @@ export default async function BlogsPage() {
             </div>
           ) : (
             blogs.map((post, index) => {
-              // Array of premium Unsplash images to cycle through
+              // Array of 10 premium Unsplash images
               const coverImages = [
                 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=800',
-                'https://images.unsplash.com/photo-1551076805-e18690c5e451?auto=format&fit=crop&q=80&w=800',
-                'https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=800',
                 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=800',
-                'https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=800'
+                'https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=800',
+                'https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=800',
+                'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800',
+                'https://images.unsplash.com/photo-1555421689-491a97ff2040?auto=format&fit=crop&q=80&w=800',
+                'https://images.unsplash.com/photo-1519389953810-c5caa1419f5d?auto=format&fit=crop&q=80&w=800',
+                'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800',
+                'https://images.unsplash.com/photo-1550831107-1553da8c8464?auto=format&fit=crop&q=80&w=800',
+                'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=800'
               ];
               const imageUrl = coverImages[index % coverImages.length];
 
@@ -98,16 +103,26 @@ export default async function BlogsPage() {
                       </p>
                     </div>
                     
-                    <div className="relative mt-8 flex items-center gap-x-4 border-t border-border-dark/50 pt-6 w-full">
-                      <div className="h-10 w-10 rounded-full bg-border-dark border border-gray-700 flex items-center justify-center text-white font-bold font-sans shadow-inner">
-                        {post.author_name.charAt(0)}
+                    <div className="relative mt-8 flex items-center justify-between border-t border-border-dark/50 pt-6 w-full">
+                      <div className="flex items-center gap-x-4">
+                        <div className="h-10 w-10 rounded-full bg-border-dark border border-gray-700 flex items-center justify-center text-white font-bold font-sans shadow-inner">
+                          {post.author_name.charAt(0)}
+                        </div>
+                        <div className="text-sm leading-6">
+                          <p className="font-bold text-white font-sans">
+                            {post.author_name}
+                          </p>
+                          <p className="text-gray-500 font-serif text-xs">CareStaff Team</p>
+                        </div>
                       </div>
-                      <div className="text-sm leading-6">
-                        <p className="font-bold text-white font-sans">
-                          {post.author_name}
-                        </p>
-                        <p className="text-gray-500 font-serif text-xs">CareStaff Team</p>
-                      </div>
+                      
+                      {/* Details Button */}
+                      <Link 
+                        href={`/blogs/${post.slug}`} 
+                        className="relative z-10 inline-flex items-center justify-center rounded-full bg-border-dark px-4 py-2 text-sm font-semibold text-white transition-all hover:bg-brand hover:text-background shadow-md border border-gray-700 hover:border-brand"
+                      >
+                        Read Details &rarr;
+                      </Link>
                     </div>
                   </div>
                 </article>

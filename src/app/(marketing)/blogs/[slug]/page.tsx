@@ -72,10 +72,21 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           </div>
         </div>
 
-        {/* Dynamic Cover Image based on slug length just to be deterministic */}
+        {/* Dynamic Cover Image based on blog ID to perfectly match the list page */}
         <div className="w-full h-[400px] mt-12 rounded-[2rem] overflow-hidden border border-border-dark shadow-2xl relative">
            <img 
-              src={`https://images.unsplash.com/photo-${blog.slug.length % 2 === 0 ? '1576091160399-112ba8d25d1d' : '1551076805-e18690c5e451'}?auto=format&fit=crop&q=80&w=1200`} 
+              src={[
+                'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=1200',
+                'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=1200',
+                'https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=1200',
+                'https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=1200',
+                'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1200',
+                'https://images.unsplash.com/photo-1555421689-491a97ff2040?auto=format&fit=crop&q=80&w=1200',
+                'https://images.unsplash.com/photo-1519389953810-c5caa1419f5d?auto=format&fit=crop&q=80&w=1200',
+                'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1200',
+                'https://images.unsplash.com/photo-1550831107-1553da8c8464?auto=format&fit=crop&q=80&w=1200',
+                'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=1200'
+              ][(blog.id - 1) % 10]}
               alt={blog.title} 
               className="w-full h-full object-cover"
             />
