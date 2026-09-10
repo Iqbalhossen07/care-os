@@ -26,6 +26,12 @@ export function Breadcrumb() {
   } else if (rootPath === 'contact') {
     bgImage = '/header_contact.jpg';
     pageTitle = 'Contact Us';
+  } else if (rootPath === 'privacy') {
+    bgImage = '/auth_cover.jpg';
+    pageTitle = 'Privacy Policy';
+  } else if (rootPath === 'terms') {
+    bgImage = '/auth_cover.jpg';
+    pageTitle = 'Terms of Service';
   }
 
   return (
