@@ -31,13 +31,13 @@ export function Footer() {
                 id="email-address"
                 autoComplete="email"
                 required
-                className="w-full min-w-0 appearance-none rounded-l-xl border-0 bg-card-dark px-4 py-3 text-base text-white shadow-sm ring-1 ring-inset ring-border-dark placeholder:text-gray-500 focus:ring-2 focus:ring-inset focus:ring-brand sm:w-64 sm:text-sm sm:leading-6 transition-all duration-300"
+                className="w-full min-w-0 appearance-none rounded-xl sm:rounded-r-none border-0 bg-card-dark px-4 py-3 text-base text-white shadow-sm ring-1 ring-inset ring-border-dark placeholder:text-gray-500 focus:ring-2 focus:ring-inset focus:ring-brand sm:w-64 sm:text-sm sm:leading-6 transition-all duration-300"
                 placeholder="Enter your email"
               />
               <div className="mt-4 sm:mt-0 sm:flex-shrink-0">
                 <button
                   type="submit"
-                  className="flex w-full items-center justify-center rounded-r-xl bg-brand px-4 py-3 text-sm font-bold text-background shadow-sm hover:bg-brand-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand transition-all duration-300"
+                  className="flex w-full items-center justify-center rounded-xl sm:rounded-l-none bg-brand px-4 py-3 text-sm font-bold text-background shadow-sm hover:bg-brand-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand transition-all duration-300"
                 >
                   Subscribe
                 </button>

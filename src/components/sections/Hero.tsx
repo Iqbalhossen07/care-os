@@ -20,7 +20,7 @@ export function Hero() {
             </div>
 
             {/* Headline */}
-            <h1 className="font-sans text-5xl font-bold tracking-tight text-white sm:text-6xl lg:text-[4rem] leading-[1.1]">
+            <h1 className="font-sans text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-[4rem] leading-[1.1]">
               Put your mess<br />
               on autopilot.<br />
               <span className="text-brand">Care together better.</span>
@@ -80,7 +80,7 @@ export function Hero() {
             </div>
 
             {/* Floating Element 1 */}
-            <div className="absolute -left-12 top-1/4 rounded-xl bg-card-dark/90 border border-border-dark p-4 shadow-2xl z-20 w-48 backdrop-blur-xl animate-[bounce_5s_infinite]">
+            <div className="absolute -left-4 md:-left-12 top-1/4 rounded-xl bg-card-dark/90 border border-border-dark p-4 shadow-2xl z-20 w-48 backdrop-blur-xl animate-[bounce_5s_infinite] hidden sm:block">
               <div className="flex items-center gap-3">
                 <div className="h-10 w-10 rounded-full bg-brand/20 flex items-center justify-center border border-brand/30">
                   <svg className="w-5 h-5 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -95,7 +95,7 @@ export function Hero() {
             </div>
 
             {/* Floating Element 2 */}
-            <div className="absolute -right-8 bottom-1/4 rounded-xl bg-card-dark/90 border border-border-dark p-4 shadow-2xl z-20 w-60 backdrop-blur-xl animate-[bounce_6s_infinite_reverse]">
+            <div className="absolute -right-4 md:-right-8 bottom-1/4 rounded-xl bg-card-dark/90 border border-border-dark p-4 shadow-2xl z-20 w-60 backdrop-blur-xl animate-[bounce_6s_infinite_reverse] hidden sm:block">
               <div className="flex items-center gap-3">
                 <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=150" className="w-10 h-10 rounded-full object-cover border border-border-dark" />
                 <div>

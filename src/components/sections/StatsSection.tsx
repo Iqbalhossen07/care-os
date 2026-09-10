@@ -16,7 +16,7 @@ export function StatsSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 divide-x divide-border-dark">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {[
             { stat: '1,000+', label: 'Care Providers' },
             { stat: '5 Million', label: 'Tasks Logged Monthly' },

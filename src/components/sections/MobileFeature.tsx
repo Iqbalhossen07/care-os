@@ -83,7 +83,7 @@ export function MobileFeature() {
             </div>
 
             {/* Floating Element: Offline Sync */}
-            <div className="absolute -left-16 top-1/3 rounded-2xl bg-card-dark/90 backdrop-blur-xl border border-border-dark p-4 shadow-2xl z-20 animate-[bounce_5s_infinite]">
+            <div className="absolute -left-4 md:-left-16 top-1/3 rounded-2xl bg-card-dark/90 backdrop-blur-xl border border-border-dark p-4 shadow-2xl z-20 animate-[bounce_5s_infinite] hidden sm:block">
               <div className="flex items-center gap-3">
                 <div className="w-2.5 h-2.5 rounded-full bg-brand animate-pulse shadow-[0_0_10px_rgba(0,210,170,0.8)]"></div>
                 <span className="text-sm font-bold text-white font-sans">Offline sync restored</span>

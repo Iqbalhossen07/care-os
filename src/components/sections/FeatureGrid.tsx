@@ -73,7 +73,7 @@ export function FeatureGrid() {
                     {feature.name}
                   </h3>
                 </div>
-                <p className="text-base leading-relaxed text-gray-400 font-serif mt-2 pl-[76px]">
+                <p className="text-base leading-relaxed text-gray-400 font-serif mt-2 pl-0 sm:pl-[76px]">
                   {feature.description}
                 </p>
               </div>

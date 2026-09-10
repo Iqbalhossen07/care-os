@@ -27,8 +27,8 @@ export function FamilyPortalFeature() {
               </div>
 
               {/* Floating UI Elements over image */}
-              <div className="absolute -bottom-8 -left-8 right-10">
-                <div className="relative z-20 p-5 rounded-2xl bg-card-dark/95 backdrop-blur-xl border border-border-dark shadow-[0_20px_40px_rgba(0,0,0,0.4)] flex items-center gap-4 animate-[bounce_5s_infinite]">
+              <div className="absolute -bottom-4 -left-2 sm:-bottom-8 sm:-left-8 right-4 sm:right-10">
+                <div className="relative z-20 p-4 sm:p-5 rounded-2xl bg-card-dark/95 backdrop-blur-xl border border-border-dark shadow-[0_20px_40px_rgba(0,0,0,0.4)] flex items-center gap-3 sm:gap-4 animate-[bounce_5s_infinite]">
                   <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-blue-500/10 border border-blue-500/20 text-blue-400 shadow-inner">
                     <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" /></svg>
                   </div>

@@ -97,13 +97,13 @@ export default async function BlogsPage() {
                       </p>
                     </div>
                     
-                    <div className="relative mt-8 flex items-center justify-between border-t border-border-dark/50 pt-6 w-full">
+                    <div className="relative mt-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-t border-border-dark/50 pt-6 w-full">
                       <div className="flex items-center gap-x-4">
-                        <div className="h-10 w-10 rounded-full bg-border-dark border border-gray-700 flex items-center justify-center text-white font-bold font-sans shadow-inner">
+                        <div className="h-10 w-10 rounded-full bg-border-dark border border-gray-700 flex items-center justify-center text-white font-bold font-sans shadow-inner shrink-0">
                           {post.author_name.charAt(0)}
                         </div>
                         <div className="text-sm leading-6">
-                          <p className="font-bold text-white font-sans">
+                          <p className="font-bold text-white font-sans truncate max-w-[120px]">
                             {post.author_name}
                           </p>
                           <p className="text-gray-500 font-serif text-xs">CareStaff Team</p>
@@ -113,7 +113,7 @@ export default async function BlogsPage() {
                       {/* Details Button */}
                       <Link 
                         href={`/blogs/${post.slug}`} 
-                        className="relative z-10 inline-flex items-center justify-center rounded-full bg-border-dark px-4 py-2 text-sm font-semibold text-white transition-all hover:bg-brand hover:text-background shadow-md border border-gray-700 hover:border-brand"
+                        className="relative z-10 w-full sm:w-auto inline-flex items-center justify-center rounded-full bg-border-dark px-4 py-2 text-sm font-semibold text-white transition-all hover:bg-brand hover:text-background shadow-md border border-gray-700 hover:border-brand shrink-0"
                       >
                         Read Details &rarr;
                       </Link>

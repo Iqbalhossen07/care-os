@@ -162,14 +162,14 @@ export default function PricingPage() {
         </div>
       </section>
 
-      {/* 4. MASSIVE FEATURE COMPARISON TABLE */}
-      <section className="py-24 px-6 lg:px-8 max-w-7xl mx-auto relative z-10 overflow-x-auto">
+      <section className="py-24 px-6 lg:px-8 max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-extrabold text-white font-sans mb-4">Compare features across all plans</h2>
         </div>
 
-        <div className="min-w-[800px]">
-          <table className="w-full text-left border-collapse">
+        <div className="w-full overflow-x-auto pb-4">
+          <div className="min-w-[800px]">
+            <table className="w-full text-left border-collapse">
             <thead>
               <tr>
                 <th className="w-1/3 py-6 px-4"></th>
@@ -246,6 +246,7 @@ export default function PricingPage() {
 
             </tbody>
           </table>
+          </div>
         </div>
       </section>
 
