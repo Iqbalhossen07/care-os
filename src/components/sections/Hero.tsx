@@ -31,7 +31,7 @@ export function Hero() {
 
             {/* CTA Buttons */}
             <div className="mt-8 flex flex-wrap items-center gap-6">
-              <Button href="/contact" variant="primary" className="h-12 px-8 text-base rounded-full shadow-[0_0_20px_rgba(0,210,170,0.3)] hover:shadow-[0_0_30px_rgba(0,210,170,0.5)] hover:-translate-y-0.5 transition-all duration-300">
+              <Button href="/contact" variant="primary" className="rounded-full shadow-[0_0_20px_rgba(0,210,170,0.3)] hover:shadow-[0_0_30px_rgba(0,210,170,0.5)] hover:-translate-y-0.5 transition-all duration-300">
                 Book a demo
               </Button>
               <a href="/features" className="text-sm font-medium text-gray-300 hover:text-white flex items-center gap-2 transition-colors group">

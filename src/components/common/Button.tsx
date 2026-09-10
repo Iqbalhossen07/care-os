@@ -7,7 +7,10 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 export function Button({ variant = 'primary', href, className = '', children, ...props }: ButtonProps) {
-  const baseStyles = 'inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-semibold transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand h-10 px-6';
+  // Mobile size: h-10, px-5, text-sm. Desktop size: md:h-12 md:px-8 md:text-base
+  // All buttons will inherit these identical dimensions.
+  const baseStyles = 'inline-flex items-center justify-center whitespace-nowrap rounded-md font-semibold transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand h-10 px-5 text-sm md:h-12 md:px-8 md:text-base';
+
   
   const variants = {
     primary: 'bg-brand hover:bg-brand-hover text-white shadow-sm border border-transparent',

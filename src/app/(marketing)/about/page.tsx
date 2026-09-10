@@ -27,7 +27,7 @@ export default function AboutPage() {
                 CareStaff OS was created to replace scattered spreadsheets, confusing compliance logs, and repetitive follow-ups with one calm, transparent workspace.
               </p>
               <div className="mt-8">
-                <Button href="/contact" variant="primary" className="h-12 px-8 rounded-full shadow-[0_0_20px_rgba(0,210,170,0.3)] hover:shadow-[0_0_30px_rgba(0,210,170,0.5)] transition-all">
+                <Button href="/contact" variant="primary" className="rounded-full shadow-[0_0_20px_rgba(0,210,170,0.3)] hover:shadow-[0_0_30px_rgba(0,210,170,0.5)] transition-all">
                   Start for Free &rarr;
                 </Button>
               </div>

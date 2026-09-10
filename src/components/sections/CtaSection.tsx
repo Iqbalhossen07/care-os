@@ -19,10 +19,10 @@ export function CtaSection() {
             Join the hundreds of forward-thinking care providers using CareStaff OS to deliver better care, ensure compliance, and connect families.
           </p>
           <div className="relative z-10 flex flex-col sm:flex-row items-center justify-center gap-6">
-            <Button href="/contact" variant="primary" className="h-14 px-10 text-lg rounded-full shadow-[0_0_30px_rgba(0,210,170,0.4)] hover:shadow-[0_0_50px_rgba(0,210,170,0.6)] hover:-translate-y-1 transition-all duration-300">
+            <Button href="/contact" variant="primary" className="rounded-full shadow-[0_0_30px_rgba(0,210,170,0.4)] hover:shadow-[0_0_50px_rgba(0,210,170,0.6)] hover:-translate-y-1 transition-all duration-300">
               Book a free demo
             </Button>
-            <Button href="/about" variant="outline" className="h-14 px-10 text-lg rounded-full border-gray-600 bg-transparent text-white hover:bg-gray-800 transition-all duration-300">
+            <Button href="/about" variant="outline" className="rounded-full border-gray-600 bg-transparent text-white hover:bg-gray-800 transition-all duration-300">
               Learn more about us
             </Button>
           </div>

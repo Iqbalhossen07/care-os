@@ -96,7 +96,7 @@ export default function ContactPage() {
                 </div>
                 <h3 className="text-3xl font-bold text-white mb-4 font-sans tracking-tight">Request Received!</h3>
                 <p className="text-gray-400 font-serif text-lg">Thank you for reaching out. Our team will get back to you shortly.</p>
-                <Button className="mt-10 h-12 rounded-full border border-border-dark bg-background text-white hover:bg-border-dark shadow-md hover:shadow-lg transition-all" onClick={() => setStatus('idle')} variant="outline">
+                <Button className="mt-10 rounded-full border border-border-dark bg-background text-white hover:bg-border-dark shadow-md hover:shadow-lg transition-all" onClick={() => setStatus('idle')} variant="outline">
                   Send another message
                 </Button>
               </div>
@@ -174,7 +174,7 @@ export default function ContactPage() {
                 </div>
 
                 <div className="mt-10">
-                  <Button type="submit" variant="primary" className="w-full h-14 text-base font-bold rounded-xl shadow-[0_0_20px_rgba(0,210,170,0.2)] hover:shadow-[0_0_30px_rgba(0,210,170,0.4)] transition-all" disabled={status === 'loading'}>
+                  <Button type="submit" variant="primary" className="font-bold rounded-xl shadow-[0_0_20px_rgba(0,210,170,0.2)] hover:shadow-[0_0_30px_rgba(0,210,170,0.4)] transition-all" disabled={status === 'loading'}>
                     {status === 'loading' ? 'Sending...' : 'Send Message'}
                   </Button>
                 </div>
