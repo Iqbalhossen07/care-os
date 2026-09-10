@@ -152,7 +152,7 @@ export default function AboutPage() {
       {/* Stats Bar */}
       <section className="border-t border-b border-border-dark bg-card-dark py-12">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 divide-x divide-border-dark">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
               { stat: '1,000+', label: 'Care Homes Supported', icon: '🏢' },
               { stat: '10K+', label: 'Staff Members', icon: '👥' },
