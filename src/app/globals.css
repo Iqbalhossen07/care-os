@@ -20,6 +20,14 @@
   --color-border-dark: var(--border-dark);
   --font-sans: var(--font-lora), ui-sans-serif, system-ui, sans-serif;
   --font-serif: var(--font-merriweather), ui-serif, Georgia, serif;
+  
+  --animate-infinite-scroll: infinite-scroll 40s linear infinite;
+  --animate-infinite-scroll-hover: infinite-scroll 40s linear infinite paused;
+}
+
+@keyframes infinite-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
 body {
