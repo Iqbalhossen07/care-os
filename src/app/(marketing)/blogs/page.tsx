@@ -55,18 +55,12 @@ export default async function BlogsPage() {
             </div>
           ) : (
             blogs.map((post, index) => {
-              // Array of 10 premium Unsplash images
+              // Array of premium generated images
               const coverImages = [
-                'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=800',
-                'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=800',
-                'https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=800',
-                'https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=800',
-                'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800',
-                'https://images.unsplash.com/photo-1555421689-491a97ff2040?auto=format&fit=crop&q=80&w=800',
-                'https://images.unsplash.com/photo-1519389953810-c5caa1419f5d?auto=format&fit=crop&q=80&w=800',
-                'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800',
-                'https://images.unsplash.com/photo-1550831107-1553da8c8464?auto=format&fit=crop&q=80&w=800',
-                'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=800'
+                '/blog_gen_1.jpg',
+                '/blog_gen_2.jpg',
+                '/blog_gen_3.jpg',
+                '/blog_gen_4.jpg'
               ];
               const imageUrl = coverImages[index % coverImages.length];
 
