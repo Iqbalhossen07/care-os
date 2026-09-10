@@ -1,3 +1,4 @@
+import { RoadmapSection } from '@/components/sections/RoadmapSection';
 import React from 'react';
 import { Button } from '@/components/common/Button';
 
@@ -149,7 +150,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-
+      <RoadmapSection />
 
       {/* Founder Section */}
       <section className="py-24 sm:py-32">

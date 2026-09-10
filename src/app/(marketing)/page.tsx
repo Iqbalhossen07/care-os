@@ -3,6 +3,8 @@ import { Hero } from '@/components/sections/Hero';
 import { FeatureGrid } from '@/components/sections/FeatureGrid';
 import { MobileFeature } from '@/components/sections/MobileFeature';
 import { FamilyPortalFeature } from '@/components/sections/FamilyPortalFeature';
+import { CqcCompliance } from '@/components/sections/CqcCompliance';
+import { FaqSection } from '@/components/sections/FaqSection';
 import { CtaSection } from '@/components/sections/CtaSection';
 
 export default function HomePage() {
@@ -65,9 +67,11 @@ export default function HomePage() {
         </div>
       </section>
 
+      <CqcCompliance />
       <FeatureGrid />
       <MobileFeature />
       <FamilyPortalFeature />
+      <FaqSection />
       <CtaSection />
     </>
   );
