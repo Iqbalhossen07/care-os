@@ -53,7 +53,7 @@ export function Navbar() {
         {/* Desktop CTA */}
         <div className="hidden md:flex items-center gap-6">
           <Link href="/login" className="text-sm font-medium text-gray-400 hover:text-white transition-colors">Login</Link>
-          <Button href="/contact" variant="primary" className="h-10 px-6 rounded-full shadow-[0_0_20px_rgba(0,210,170,0.3)] hover:shadow-[0_0_30px_rgba(0,210,170,0.5)]">
+          <Button href="/contact" variant="primary" className="rounded-full shadow-[0_0_20px_rgba(0,210,170,0.3)] hover:shadow-[0_0_30px_rgba(0,210,170,0.5)]">
             Book a Demo
           </Button>
         </div>

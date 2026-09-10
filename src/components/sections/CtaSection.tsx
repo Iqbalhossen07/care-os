@@ -1,35 +1,30 @@
 import React from 'react';
-import Link from 'next/link';
+import { Button } from '@/components/common/Button';
 
 export function CtaSection() {
   return (
-    <section className="bg-brand py-16 sm:py-24 relative overflow-hidden">
-      {/* Decorative background elements */}
-      <div className="absolute top-0 right-0 -translate-y-12 translate-x-1/3">
-        <div className="h-64 w-64 rounded-full bg-white opacity-10 blur-3xl"></div>
-      </div>
-      <div className="absolute bottom-0 left-0 translate-y-1/3 -translate-x-1/3">
-        <div className="h-64 w-64 rounded-full bg-background opacity-20 blur-3xl"></div>
-      </div>
+    <section className="bg-background relative border-t border-border-dark overflow-hidden">
+      {/* Background patterns */}
+      <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-[0.03]"></div>
+      
+      <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 relative">
+        <div className="relative flex flex-col items-center justify-center rounded-[3rem] bg-card-dark border border-border-dark px-6 py-20 text-center shadow-2xl overflow-hidden overflow-hidden">
+          {/* Inner Glow */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-lg h-64 bg-brand/30 rounded-full blur-[100px] pointer-events-none"></div>
 
-      <div className="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
-        <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-extrabold tracking-tight text-background font-sans sm:text-4xl">
-            Secure Your Founding Member Spot
+          <h2 className="text-2xl md:text-4xl xl:text-4xl 2xl:text-4xl relative z-10 font-sans font-extrabold tracking-tight text-white mb-6">
+            Ready to transform your care home?
           </h2>
-          <p className="mt-6 text-lg leading-relaxed text-background/80 font-serif">
-            CareStaff OS is opening its closed beta to 100 forward-thinking UK care homes. Join the waitlist today for lifetime discounts and free data migration.
+          <p className="relative z-10 mx-auto max-w-2xl text-lg leading-relaxed text-gray-300 font-serif mb-12">
+            Join the hundreds of forward-thinking care providers using CareStaff OS to deliver better care, ensure compliance, and connect families.
           </p>
-          <div className="mt-10 flex items-center justify-center gap-x-6">
-            <Link
-              href="/pricing"
-              className="rounded-xl bg-background px-8 py-4 text-base font-bold text-brand shadow-lg hover:bg-card-dark transition-all duration-300 hover:scale-105 font-sans"
-            >
-              Join the Waitlist
-            </Link>
-            <Link href="/contact" className="text-base font-bold leading-6 text-background hover:text-white transition-colors font-sans">
-              Contact Sales <span aria-hidden="true">→</span>
-            </Link>
+          <div className="relative z-10 flex flex-col sm:flex-row items-center justify-center gap-6">
+            <Button href="/contact" variant="primary" className="rounded-full shadow-[0_0_30px_rgba(0,210,170,0.4)] hover:shadow-[0_0_50px_rgba(0,210,170,0.6)] hover:-translate-y-1 transition-all duration-300">
+              Book a free demo
+            </Button>
+            <Button href="/about" variant="outline" className="rounded-full border-gray-600 bg-transparent text-white hover:bg-gray-800 transition-all duration-300">
+              Learn more about us
+            </Button>
           </div>
         </div>
       </div>
