@@ -21,9 +21,9 @@ export function Hero() {
 
             {/* Headline */}
             <h1 className="font-sans text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-[4rem] leading-[1.1]">
-              Put your mess<br />
+              Put your compliance<br />
               on autopilot.<br />
-              <span className="text-brand">Care together better.</span>
+              <span className="text-brand">Deliver outstanding care.</span>
             </h1>
 
             {/* Sub-headline */}
