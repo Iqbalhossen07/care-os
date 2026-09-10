@@ -9,10 +9,10 @@ export function FamilyPortalFeature() {
       <div className="absolute left-0 top-1/2 -translate-y-1/2 w-[500px] h-[800px] bg-blue-900/10 rounded-full blur-[120px] pointer-events-none"></div>
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
-        <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-16 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 items-center">
+        <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-12 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-12 items-center">
           
           {/* Left: UI Tablet Mockup */}
-          <div className="relative lg:order-last">
+          <div className="relative lg:col-span-7 lg:order-last lg:w-[115%] lg:-ml-4 z-10">
             {/* Outer Tablet Frame */}
             <div className="relative rounded-[2rem] bg-[#05080a] p-3 shadow-2xl border border-border-dark ring-1 ring-white/5 transform lg:-rotate-2 transition-transform duration-700 hover:rotate-0 hover:shadow-[0_0_80px_rgba(59,130,246,0.15)] group z-10">
               
@@ -42,19 +42,19 @@ export function FamilyPortalFeature() {
           </div>
 
           {/* Right: Text Content */}
-          <div className="lg:pr-8 lg:pt-4">
+          <div className="lg:col-span-5 lg:pr-8 lg:pt-4">
             <div className="lg:max-w-lg">
-              <div className="inline-flex items-center gap-2 rounded-full bg-blue-500/10 border border-blue-500/20 px-3 py-1 text-sm font-medium text-blue-400 mb-6 shadow-inner">
+              <div className="inline-flex items-center gap-2 rounded-full bg-blue-500/10 border border-blue-500/20 px-3 py-1 text-sm font-medium text-blue-400 mb-4 shadow-inner">
                 Family Portal
               </div>
-              <h2 className="font-sans text-4xl font-extrabold tracking-tight text-white sm:text-5xl leading-tight">
-                Keep families connected. <br/>Transparent & secure.
+              <h2 className="font-sans text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-[3.25rem] leading-[1.1]">
+                Keep families connected. <span className="block mt-1">Transparent & secure.</span>
               </h2>
-              <p className="mt-6 text-lg leading-relaxed text-gray-400 font-serif">
+              <p className="mt-4 text-lg leading-relaxed text-gray-400 font-serif">
                 Provide peace of mind to families while reducing phone calls to your front desk. The Family Portal gives loved ones a secure, consent-gated view into the resident's daily life.
               </p>
               
-              <div className="mt-10 space-y-8 text-base leading-7 text-gray-400 font-serif">
+              <div className="mt-8 space-y-6 text-base leading-7 text-gray-400 font-serif">
                 <div className="flex gap-4 group">
                   <div className="flex-none mt-1">
                     <div className="flex h-8 w-8 items-center justify-center rounded-full bg-blue-500/10 border border-blue-500/20 group-hover:bg-blue-500/20 transition-colors shadow-inner">
@@ -89,7 +89,7 @@ export function FamilyPortalFeature() {
                 </div>
               </div>
               
-              <div className="mt-12">
+              <div className="mt-8">
                 <Button href="/features" variant="outline" className="border-border-dark text-white hover:bg-border-dark hover:border-blue-400">
                   Open Family Portal
                 </Button>
