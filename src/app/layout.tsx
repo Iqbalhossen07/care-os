@@ -14,8 +14,22 @@ const merriweather = Merriweather({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://carestaff.iqbalhossen.xyz"),
   title: "CareStaff OS",
   description: "The smart homecare technology partner",
+  openGraph: {
+    title: "CareStaff OS | The smart homecare technology partner",
+    description: "Put your compliance on autopilot. Deliver outstanding care.",
+    url: "https://carestaff.iqbalhossen.xyz",
+    siteName: "CareStaff OS",
+    locale: "en_GB",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "CareStaff OS",
+    description: "Put your compliance on autopilot. Deliver outstanding care.",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
