@@ -7,8 +7,8 @@ import { usePathname } from 'next/navigation';
 export function Breadcrumb() {
   const pathname = usePathname();
   
-  // Do not render on home page
-  if (pathname === '/') return null;
+  // Do not render on home or pricing page
+  if (pathname === '/' || pathname === '/pricing') return null;
 
   const pathNames = pathname.split('/').filter((path) => path);
   const rootPath = pathNames[0];
