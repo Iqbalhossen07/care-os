@@ -69,9 +69,12 @@ export function Hero() {
             {/* The main dashboard container */}
             <div className="relative rounded-2xl bg-card-dark border border-border-dark p-2 shadow-2xl z-10 transform lg:-rotate-2 transition-transform duration-700 hover:rotate-0">
               <div className="rounded-xl overflow-hidden border border-border-dark/50 bg-[#0a0f12]">
-                <img 
-                  src="/hero-dashboard.jpg" 
-                  alt="CareStaff OS Dashboard" 
+                <video 
+                  src="/hero.mp4" 
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
                   className="w-full h-auto object-cover opacity-90 hover:opacity-100 transition-opacity duration-500"
                 />
               </div>
