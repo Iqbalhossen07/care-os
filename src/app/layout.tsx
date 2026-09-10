@@ -32,6 +32,8 @@ export const metadata: Metadata = {
   },
 };
 
+import { FloatingSupport } from "@/components/common/FloatingSupport";
+
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
@@ -41,6 +43,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body suppressHydrationWarning className="min-h-full flex flex-col font-sans">
         {children}
+        <FloatingSupport />
       </body>
     </html>
   );
