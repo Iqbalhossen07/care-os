@@ -20,7 +20,7 @@ export function Hero() {
             </div>
 
             {/* Headline */}
-            <h1 className="font-sans text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-[3.5rem] leading-[1.1]">
+            <h1 className="text-2xl md:text-4xl xl:text-4xl 2xl:text-4xl font-sans font-bold tracking-tight text-white leading-[1.1]">
               Put your compliance on autopilot. <span className="block mt-1 text-brand">Deliver outstanding care.</span>
             </h1>
 

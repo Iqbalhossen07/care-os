@@ -15,7 +15,7 @@ export default function PrivacyPage() {
         
         <div className="border-b border-border-dark pb-10">
           <p className="text-brand font-bold uppercase tracking-widest text-sm mb-4">Effective Date: October 1, 2026</p>
-          <h2 className="text-3xl font-bold text-white font-sans tracking-tight">Our Commitment to Privacy</h2>
+          <h2 className="text-2xl md:text-4xl xl:text-4xl 2xl:text-4xl font-bold text-white font-sans tracking-tight">Our Commitment to Privacy</h2>
           <p className="mt-4 text-lg">
             At CareStaff OS, we take the security and privacy of your care home&apos;s data incredibly seriously. 
             Because we operate in the healthcare sector, we hold ourselves to the highest standards of data 

@@ -50,7 +50,7 @@ export default function ContactPage() {
           
           {/* Left Side: Info */}
           <div className="lg:col-span-5 flex flex-col justify-center">
-            <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl font-sans mb-6 leading-tight">
+            <h2 className="text-2xl md:text-4xl xl:text-4xl 2xl:text-4xl font-extrabold tracking-tight text-white font-sans mb-6 leading-tight">
               Get in touch with our team.
             </h2>
             <p className="text-lg leading-relaxed text-gray-400 font-serif mb-10">

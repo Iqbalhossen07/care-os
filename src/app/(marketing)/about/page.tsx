@@ -20,7 +20,7 @@ export default function AboutPage() {
               <div className="inline-flex items-center gap-2 rounded-full bg-card-dark border border-border-dark px-3 py-1 text-xs font-bold text-brand uppercase tracking-widest mb-6 shadow-md">
                 About CareStaff
               </div>
-              <h1 className="font-sans text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-[3.5rem] leading-[1.1]">
+              <h1 className="text-2xl md:text-4xl xl:text-4xl 2xl:text-4xl font-sans font-extrabold tracking-tight text-white leading-[1.1]">
                 Social care deserves a clearer system.
               </h1>
               <p className="mt-4 text-lg leading-relaxed text-gray-400 font-serif">
@@ -55,7 +55,7 @@ export default function AboutPage() {
             <div className="inline-flex items-center gap-2 rounded-full bg-card-dark border border-border-dark px-3 py-1 text-xs font-bold text-brand uppercase tracking-widest mb-6">
               Our Approach
             </div>
-            <h2 className="font-sans text-3xl font-bold tracking-tight text-white sm:text-4xl">
+            <h2 className="text-2xl md:text-4xl xl:text-4xl 2xl:text-4xl font-sans font-bold tracking-tight text-white">
               Less admin. More care.
             </h2>
             <p className="mt-4 text-gray-400 font-serif max-w-2xl mx-auto">
@@ -123,7 +123,7 @@ export default function AboutPage() {
               <div className="inline-flex items-center gap-2 rounded-full bg-card-dark border border-border-dark px-3 py-1 text-xs font-bold text-brand uppercase tracking-widest mb-6">
                 Why we built it
               </div>
-              <h2 className="font-sans text-3xl font-bold tracking-tight text-white sm:text-4xl mb-6 leading-tight">
+              <h2 className="text-2xl md:text-4xl xl:text-4xl 2xl:text-4xl font-sans font-bold tracking-tight text-white mb-6 leading-tight">
                 One source of truth for the whole care home
               </h2>
               <p className="text-gray-400 font-serif mb-8 leading-relaxed">

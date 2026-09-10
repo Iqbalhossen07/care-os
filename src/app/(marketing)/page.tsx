@@ -20,7 +20,7 @@ export default function HomePage() {
 
         <div className="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl lg:text-5xl font-sans">
+            <h2 className="text-2xl md:text-4xl xl:text-4xl 2xl:text-4xl font-extrabold tracking-tight text-white font-sans">
               Three Panels. <span className="text-brand">One Ecosystem.</span>
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-gray-400 font-serif">

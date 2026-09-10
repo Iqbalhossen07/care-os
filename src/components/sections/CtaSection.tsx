@@ -12,7 +12,7 @@ export function CtaSection() {
           {/* Inner Glow */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-lg h-64 bg-brand/30 rounded-full blur-[100px] pointer-events-none"></div>
 
-          <h2 className="relative z-10 font-sans text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl mb-6">
+          <h2 className="text-2xl md:text-4xl xl:text-4xl 2xl:text-4xl relative z-10 font-sans font-extrabold tracking-tight text-white mb-6">
             Ready to transform your care home?
           </h2>
           <p className="relative z-10 mx-auto max-w-2xl text-lg leading-relaxed text-gray-300 font-serif mb-12">

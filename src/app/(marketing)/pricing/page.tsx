@@ -20,7 +20,7 @@ export default function PricingPage() {
             <div className="inline-flex items-center gap-2 rounded-full bg-brand/10 border border-brand/20 px-3 py-1 text-xs font-bold text-brand uppercase tracking-widest mb-6">
               Pricing
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white font-sans tracking-tight leading-[1.1] mb-6">
+            <h1 className="text-2xl md:text-4xl xl:text-4xl 2xl:text-4xl font-extrabold text-white font-sans tracking-tight leading-[1.1] mb-6">
               Plans designed to suit <span className="text-brand">your homecare</span> business
             </h1>
             <p className="text-lg text-gray-400 font-serif leading-relaxed mb-8 max-w-lg">
@@ -66,7 +66,7 @@ export default function PricingPage() {
       <section className="py-20 bg-card-dark/30 border-y border-border-dark relative z-10">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-white font-sans">Every CareStaff OS customer gets...</h2>
+            <h2 className="text-2xl md:text-4xl xl:text-4xl 2xl:text-4xl font-bold text-white font-sans">Every CareStaff OS customer gets...</h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
@@ -92,7 +92,7 @@ export default function PricingPage() {
       {/* 3. PRICING TIERS */}
       <section className="py-24 px-6 lg:px-8 max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-white font-sans mb-4">Pick the tier that suits your growth</h2>
+          <h2 className="text-2xl md:text-4xl xl:text-4xl 2xl:text-4xl font-extrabold text-white font-sans mb-4">Pick the tier that suits your growth</h2>
           <p className="text-gray-400 font-serif max-w-2xl mx-auto">Scale your operations effortlessly. Upgrade or downgrade at any time.</p>
         </div>
 
@@ -164,7 +164,7 @@ export default function PricingPage() {
 
       <section className="py-24 px-6 lg:px-8 max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-extrabold text-white font-sans mb-4">Compare features across all plans</h2>
+          <h2 className="text-2xl md:text-4xl xl:text-4xl 2xl:text-4xl font-extrabold text-white font-sans mb-4">Compare features across all plans</h2>
         </div>
 
         <div className="w-full overflow-x-auto pb-4">
@@ -253,7 +253,7 @@ export default function PricingPage() {
       {/* 5. CTA */}
       <section className="py-24 relative z-10 border-t border-border-dark">
         <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center bg-card-dark border border-brand/20 p-12 md:p-16 rounded-[3rem] shadow-[0_0_50px_rgba(0,210,170,0.1)]">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-white font-sans mb-6">
+          <h2 className="text-2xl md:text-4xl xl:text-4xl 2xl:text-4xl font-extrabold text-white font-sans mb-6">
             Technology that helps homecare work smarter
           </h2>
           <p className="text-lg text-gray-400 font-serif mb-10 max-w-2xl mx-auto">

@@ -47,7 +47,7 @@ export function Breadcrumb() {
       <div className="absolute inset-0 bg-brand/10 mix-blend-multiply"></div>
 
       <div className="relative mx-auto w-full max-w-7xl px-6 lg:px-8 pb-10">
-        <h1 className="text-4xl font-extrabold tracking-tight text-white font-sans mb-4 drop-shadow-md">
+        <h1 className="text-2xl md:text-4xl xl:text-4xl 2xl:text-4xl font-extrabold tracking-tight text-white font-sans mb-4 drop-shadow-md">
           {pageTitle}
         </h1>
         

@@ -47,7 +47,7 @@ export function FamilyPortalFeature() {
               <div className="inline-flex items-center gap-2 rounded-full bg-blue-500/10 border border-blue-500/20 px-3 py-1 text-sm font-medium text-blue-400 mb-4 shadow-inner">
                 Family Portal
               </div>
-              <h2 className="font-sans text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-[3.25rem] leading-[1.1]">
+              <h2 className="text-2xl md:text-4xl xl:text-4xl 2xl:text-4xl font-sans font-extrabold tracking-tight text-white leading-[1.1]">
                 Keep families connected. <span className="block mt-1">Transparent & secure.</span>
               </h2>
               <p className="mt-4 text-lg leading-relaxed text-gray-400 font-serif">

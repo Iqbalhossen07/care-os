@@ -15,7 +15,7 @@ export default function TermsPage() {
         
         <div className="border-b border-border-dark pb-10">
           <p className="text-brand font-bold uppercase tracking-widest text-sm mb-4">Effective Date: October 1, 2026</p>
-          <h2 className="text-3xl font-bold text-white font-sans tracking-tight">Terms of Service</h2>
+          <h2 className="text-2xl md:text-4xl xl:text-4xl 2xl:text-4xl font-bold text-white font-sans tracking-tight">Terms of Service</h2>
           <p className="mt-4 text-lg">
             Please read these Terms of Service carefully before subscribing to or using CareStaff OS. By using our platform, you agree to be bound by these terms.
           </p>

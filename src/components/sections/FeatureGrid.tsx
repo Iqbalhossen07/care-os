@@ -52,7 +52,7 @@ export function FeatureGrid() {
           <div className="inline-flex items-center gap-2 rounded-full bg-border-dark px-3 py-1 text-sm font-medium text-brand mb-6 shadow-inner border border-gray-800">
             Admin & Business Panel
           </div>
-          <h2 className="font-sans text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
+          <h2 className="text-2xl md:text-4xl xl:text-4xl 2xl:text-4xl font-sans font-bold tracking-tight text-white">
             Everything you need to run your care business
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-gray-400 font-serif">

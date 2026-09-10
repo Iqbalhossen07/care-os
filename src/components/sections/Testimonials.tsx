@@ -56,7 +56,7 @@ export function Testimonials() {
           <div className="inline-flex items-center gap-2 rounded-full bg-border-dark border border-gray-800 px-3 py-1 text-sm font-medium text-brand mb-6 shadow-inner">
             Testimonials
           </div>
-          <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl lg:text-5xl font-sans">
+          <h2 className="text-2xl md:text-4xl xl:text-4xl 2xl:text-4xl font-extrabold tracking-tight text-white font-sans">
             Don't just take our word for it.
           </h2>
         </div>

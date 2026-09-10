@@ -33,7 +33,7 @@ export default async function BlogsPage() {
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
         <div className="mx-auto max-w-2xl text-center mb-20">
-          <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl font-sans mb-6">The CareStaff Blog</h1>
+          <h1 className="text-2xl md:text-4xl xl:text-4xl 2xl:text-4xl font-extrabold tracking-tight text-white font-sans mb-6">The CareStaff Blog</h1>
           <p className="mt-2 text-lg leading-8 text-gray-400 font-serif">
             Insights on modernizing social care, compliance tips, and product updates.
           </p>

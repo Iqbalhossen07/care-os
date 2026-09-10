@@ -16,7 +16,7 @@ export default function FeaturesPage() {
       <section className="bg-background py-12 text-center px-6 border-b border-border-dark relative overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[400px] h-[400px] bg-brand/10 rounded-full blur-[100px] pointer-events-none"></div>
         <div className="relative z-10">
-          <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl font-sans">
+          <h1 className="text-2xl md:text-4xl xl:text-4xl 2xl:text-4xl font-extrabold tracking-tight text-white font-sans">
             One Ecosystem. <span className="text-brand">Three Experiences.</span>
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-400 font-serif">

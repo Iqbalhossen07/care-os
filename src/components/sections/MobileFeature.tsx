@@ -17,7 +17,7 @@ export function MobileFeature() {
               <div className="inline-flex items-center gap-2 rounded-full bg-brand/10 border border-brand/20 px-3 py-1 text-sm font-medium text-brand mb-6 shadow-inner">
                 Care Worker PWA
               </div>
-              <h2 className="font-sans text-4xl font-extrabold tracking-tight text-white sm:text-5xl leading-tight">
+              <h2 className="text-2xl md:text-4xl xl:text-4xl 2xl:text-4xl font-sans font-extrabold tracking-tight text-white leading-tight">
                 Built for the frontline. <br/>Works entirely offline.
               </h2>
               <p className="mt-6 text-lg leading-relaxed text-gray-400 font-serif">

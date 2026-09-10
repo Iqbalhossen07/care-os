@@ -8,7 +8,7 @@ export const metadata = {
 export default function RegisterPage() {
   return (
     <>
-      <h2 className="mt-8 text-3xl font-bold tracking-tight text-white font-sans">
+      <h2 className="text-2xl md:text-4xl xl:text-4xl 2xl:text-4xl mt-8 font-bold tracking-tight text-white font-sans">
         Start your 14-day free trial
       </h2>
       <p className="mt-2 text-sm leading-6 text-gray-400 font-serif">

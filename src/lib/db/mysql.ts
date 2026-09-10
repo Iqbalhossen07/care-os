@@ -6,7 +6,7 @@ const pool = mysql.createPool({
   user: process.env.MYSQL_USER || 'root',
   password: process.env.MYSQL_PASSWORD || 'root',
   database: process.env.MYSQL_DATABASE || 'carestaff_os',
-  port: parseInt(process.env.MYSQL_PORT || '8889', 10), // MAMP default is often 8889, sometimes 3306
+  port: parseInt(process.env.MYSQL_PORT || '3306', 10), // MAMP default is often 8889, sometimes 3306
   waitForConnections: true,
   connectionLimit: 10,
   queueLimit: 0,
